@@ -1,8 +1,14 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-    body
-        include '../logo/logo.pug'                       
+extends ./template.pug
+
+block content
+    include ../logo/logo.pug
+    +logo
+
+    .color-block
+        .color-block__color
+        .color-block__title.title-h2
+        .color-block__sub-title.text   
+
+    .text-block
+        .texy-block__lable.lable
+        .text-block__text.title-h1                
