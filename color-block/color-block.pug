@@ -1,5 +1,11 @@
-mixin color-block(title, subTitle)
-    .color-block
-        .color-block__color
-        h2.color-block__title.title #{title}
-        p.color-block__sub-title.sub-title #{subTitle}
+mixin color-block(title, subTitle, colClass)
+    - let x = 'color-block__color_' + colClass
+    .color-block.section-color__item
+        div(class=x).color-block__color
+        h2.color-block__title.title-h2 #{title}
+        p.color-block__sub-title.text #{subTitle}
+
+        
+            
+            
+               

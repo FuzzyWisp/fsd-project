@@ -1,14 +1,19 @@
-extends ./template.pug
+extends ./ui-kit-template.pug
 
 block content
-    include ../logo/logo.pug
-    +logo
 
-    .color-block
-        .color-block__color
-        .color-block__title.title-h2
-        .color-block__sub-title.text   
+    .section-color
+        include ../color-block/color-block.pug
+        +color-block('Dark Shade 100%', '#1F2041', 'ds-100')
+        +color-block('Dark Shade 75%', '#1F2041', 'ds-75')
+        +color-block('Dark Shade 50%', '#1F2041', 'ds-50')
+        +color-block('Dark Shade 25%', '#1F2041', 'ds-25')
+        +color-block('Dark Shade 5%', '#1F2041', 'ds-05')
+        +color-block('Purple', '#BC9CFF', 'purple')
+        +color-block('Green', '#6FCF97', 'green')
 
-    .text-block
-        .texy-block__lable.lable
-        .text-block__text.title-h1                
+
+    .section-text
+        .text-block.section-text__item
+            .text-block__lable.lable
+            .text-block__text.title-h1                

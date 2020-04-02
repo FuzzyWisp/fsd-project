@@ -1,6 +1,16 @@
-@import './fonts.scss';
-@import './variables.scss';
-@import './defoult.scss';
+@import './core/fonts.scss';
+@import './core/variables.scss';
+@import './core/defoult.scss';
+@import '../color-block/color-block__color.scss';
+@import '../color-block/__color/_ds-100.scss';
+@import '../color-block/__color/_ds-75.scss';
+@import '../color-block/__color/_ds-50.scss';
+@import '../color-block/__color/_ds-25.scss';
+@import '../color-block/__color/_ds-05.scss';
+@import '../color-block/__color/_green.scss';
+@import '../color-block/__color/_purple.scss';
+
+
 
 body{
     font-size: 14px;
