@@ -1,35 +1,57 @@
 @import './core/fonts.scss';
-@import './core/variables.scss';
 @import './core/defoult.scss';
-@import '../color-block/color-block__color.scss';
-@import '../color-block/__color/_ds-100.scss';
+@import './core/variables.scss';
+
+@import '../color-block/color-block.scss';
 @import '../color-block/__color/_ds-75.scss';
 @import '../color-block/__color/_ds-50.scss';
 @import '../color-block/__color/_ds-25.scss';
 @import '../color-block/__color/_ds-05.scss';
 @import '../color-block/__color/_green.scss';
+@import '../color-block/__color/_ds-100.scss';
 @import '../color-block/__color/_purple.scss';
+@import '../color-block/color-block__color.scss';
+@import '../color-block/color-block__description.scss';
+
+@import '../description/description.scss';
+@import '../description/description__title.scss';
+@import '../description/description__sub-title.scss';
+
+@import '../section-color/section-color.scss';
+@import '../section-color/section-color__item.scss';
+
+@import '../section-text/section-text__item.scss';
+
+@import '../logo/logo.scss';
+
 
 
 
 body{
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 24px;
     color: $dark-shade75; 
 }
 h1{
+    font-family: "Quicksand", sans-serif;
     font-size: 24px;
     line-height: 30px;
     color: $dark-shade;
 }
 h2{
+    font-family: "Quicksand", sans-serif;
     font-size: 19px;
     line-height: 24px;
     color: $dark-shade;
 }
 h3{
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
     line-height: 15px;
     color: $dark-shade;
     text-transform: uppercase;
+}
+.content-wrapper{
+    padding: 0 140px 0 140px;
 }

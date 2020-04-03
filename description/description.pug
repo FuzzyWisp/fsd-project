@@ -1,0 +1,5 @@
+mixin description(title, subTitle, addClass)
+    - let x = 'description ' + addClass
+    div(class=x)
+        h2.description__title.title-h2 #{title}
+        p.description__sub-title.text.text_description-sub-title #{subTitle}
