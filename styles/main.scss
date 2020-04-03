@@ -2,27 +2,40 @@
 @import './core/defoult.scss';
 @import './core/variables.scss';
 
-@import '../color-block/color-block.scss';
-@import '../color-block/__color/_ds-75.scss';
-@import '../color-block/__color/_ds-50.scss';
-@import '../color-block/__color/_ds-25.scss';
-@import '../color-block/__color/_ds-05.scss';
-@import '../color-block/__color/_green.scss';
-@import '../color-block/__color/_ds-100.scss';
-@import '../color-block/__color/_purple.scss';
-@import '../color-block/color-block__color.scss';
-@import '../color-block/color-block__description.scss';
+@import '../toxin-blocks/logo/logo_ui-kit.scss';
 
-@import '../description/description.scss';
-@import '../description/description__title.scss';
-@import '../description/description__sub-title.scss';
+@import '../toxin-blocks/content-section/content-section.scss';
 
-@import '../section-color/section-color.scss';
-@import '../section-color/section-color__item.scss';
+@import '../toxin-blocks/color-block/color-block.scss';
+@import '../toxin-blocks/color-block/__color/_ds-75.scss';
+@import '../toxin-blocks/color-block/__color/_ds-50.scss';
+@import '../toxin-blocks/color-block/__color/_ds-25.scss';
+@import '../toxin-blocks/color-block/__color/_ds-05.scss';
+@import '../toxin-blocks/color-block/__color/_green.scss';
+@import '../toxin-blocks/color-block/__color/_ds-100.scss';
+@import '../toxin-blocks/color-block/__color/_purple.scss';
+@import '../toxin-blocks/color-block/color-block__color.scss';
+@import '../toxin-blocks/color-block/color-block__description.scss';
 
-@import '../section-text/section-text__item.scss';
+@import '../toxin-blocks/section-text/section-text.scss';
+@import '../toxin-blocks/section-text/section-text__item.scss';
 
-@import '../logo/logo.scss';
+
+@import '../toxin-blocks/text-block/text-block.scss';
+@import '../toxin-blocks/text-block/text-block__label.scss';
+@import '../toxin-blocks/text-block/text-block__text.scss';
+
+@import '../toxin-blocks/label/label.scss';
+
+@import '../toxin-blocks/description/description.scss';
+@import '../toxin-blocks/description/description__title.scss';
+@import '../toxin-blocks/description/description__sub-title.scss';
+
+@import '../toxin-blocks/section-color/section-color.scss';
+@import '../toxin-blocks/section-color/section-color__item.scss';
+
+@import '../toxin-blocks/section-text/section-text__item.scss';
+
 
 
 
@@ -37,18 +50,21 @@ h1{
     font-family: "Quicksand", sans-serif;
     font-size: 24px;
     line-height: 30px;
+    font-weight: 700;
     color: $dark-shade;
 }
 h2{
     font-family: "Quicksand", sans-serif;
     font-size: 19px;
     line-height: 24px;
+    font-weight: 700;
     color: $dark-shade;
 }
 h3{
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     line-height: 15px;
+    font-weight: 700;
     color: $dark-shade;
     text-transform: uppercase;
 }

@@ -1,19 +1,35 @@
-extends ./ui-kit-template.pug
+extends ./templates/ui-kit-template.pug
 
 block content
+    .content-section
+        .section-color
+            include ../toxin-blocks/color-block/color-block.pug
+            +color-block('Dark Shade 100%', '#1F2041', 'ds-100')
+            +color-block('Dark Shade 75%', '#1F2041', 'ds-75')
+            +color-block('Dark Shade 50%', '#1F2041', 'ds-50')
+            +color-block('Dark Shade 25%', '#1F2041', 'ds-25')
+            +color-block('Dark Shade 5%', '#1F2041', 'ds-05')
+            +color-block('Purple', '#BC9CFF', 'purple')
+            +color-block('Green', '#6FCF97', 'green')
 
-    .section-color
-        include ../color-block/color-block.pug
-        +color-block('Dark Shade 100%', '#1F2041', 'ds-100')
-        +color-block('Dark Shade 75%', '#1F2041', 'ds-75')
-        +color-block('Dark Shade 50%', '#1F2041', 'ds-50')
-        +color-block('Dark Shade 25%', '#1F2041', 'ds-25')
-        +color-block('Dark Shade 5%', '#1F2041', 'ds-05')
-        +color-block('Purple', '#BC9CFF', 'purple')
-        +color-block('Green', '#6FCF97', 'green')
-
-
-    .section-text
-        .text-block.section-text__item
-            .text-block__lable.lable
-            .text-block__text.title-h1                
+        .section-text
+            .text-block.section-text__item
+                .text-block__label.label
+                    h1 H1
+                .text-block__text.title-h1
+                    h1 This one is the sub-section or #[br]widget title
+            .text-block.section-text__item
+                .text-block__label.label
+                    h2 H2
+                .text-block__text.title-h2
+                    h2 Next one is the item title inside #[br]widgets
+            .text-block.section-text__item
+                .text-block__label.label
+                    h3 H3
+                .text-block__text.title-h3
+                    h3 This is a label or CTA text
+            .text-block.section-text__item
+                .text-block__label.label
+                    p Body
+                .text-block__text.text    
+                    p This is the body text which is used for most #[br]of the design, like paragraphs, lists, etc.
