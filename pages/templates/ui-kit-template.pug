@@ -1,12 +1,15 @@
+block vars
+
 doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Color & Type
+        title #{pageTitle}
     body
         include ../../toxin-blocks/logo/logo_ui-kit.pug
         +logo_ui-kit
+        
         
         .content-wrapper
             block content

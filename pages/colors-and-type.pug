@@ -1,5 +1,8 @@
 extends ./templates/ui-kit-template.pug
 
+block vars
+    - var pageTitle = 'Colors and Type';
+    
 block content
     .content-section
         .section-color
@@ -14,18 +17,18 @@ block content
 
         .section-text
             .text-block.section-text__item
-                .text-block__label.label
-                    h1 H1
+                .text-block__label.label.label_h1
+                    p H1
                 .text-block__text.title-h1
                     h1 This one is the sub-section or #[br]widget title
             .text-block.section-text__item
-                .text-block__label.label
-                    h2 H2
+                .text-block__label.label.label_h2
+                    p H2
                 .text-block__text.title-h2
                     h2 Next one is the item title inside #[br]widgets
             .text-block.section-text__item
-                .text-block__label.label
-                    h3 H3
+                .text-block__label.label.label_h3
+                    p H3
                 .text-block__text.title-h3
                     h3 This is a label or CTA text
             .text-block.section-text__item
