@@ -5,19 +5,23 @@ block vars
 
 block content
     .content-section
-        .text-fields
+        .column
+            include ../toxin-blocks/text-field/text-field.pug
+            +text-field("Я", "Кэнон", 'валуe')
+            +text-field("Я", "Кэнон")
+            +text-field("Я", "Кэнон")
+            i.material-icons &#xE313;
             .text-field
             .text-field.text-field_focused
-            .dropdown
+            .text-field.dropdown
             .text-field.text-field_masked
             .date-dropdowns
-                input(type="datetime")
                 .date-dropdown
                 .date-dropdown.date-dropdown_filled
             .filter.filter_date-dropdown
-            .text-field.text-field_subscription
-        .switches
-        .buttons
-        .dropdowns
-        .lists
-        .icons-and-comments
+            .subscription
+        .switches.column
+        .buttons.column
+        .dropdowns.column
+        .lists.column
+        .icons-and-comments.column

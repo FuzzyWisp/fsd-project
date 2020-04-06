@@ -2,7 +2,7 @@
 @import './core/defoult.scss';
 @import './core/variables.scss';
 
-@import '../toxin-blocks/logo/logo_ui-kit.scss';
+@import '../toxin-blocks/logo/_ui-kit.scss';
 
 @import '../toxin-blocks/content-section/content-section.scss';
 
@@ -14,30 +14,34 @@
 @import '../toxin-blocks/color-block/__color/_green.scss';
 @import '../toxin-blocks/color-block/__color/_ds-100.scss';
 @import '../toxin-blocks/color-block/__color/_purple.scss';
-@import '../toxin-blocks/color-block/color-block__color.scss';
-@import '../toxin-blocks/color-block/color-block__description.scss';
+@import '../toxin-blocks/color-block/__color.scss';
+@import '../toxin-blocks/color-block/__description.scss';
+
+@import '../toxin-blocks/text-field/__title';
+@import '../toxin-blocks/text-field/__titles';
+@import '../toxin-blocks/text-field/__sub-title';
+@import '../toxin-blocks/text-field/__input/__input';
 
 @import '../toxin-blocks/section-text/section-text.scss';
-@import '../toxin-blocks/section-text/section-text__item.scss';
-
+@import '../toxin-blocks/section-text/__item.scss';
 
 @import '../toxin-blocks/text-block/text-block.scss';
-@import '../toxin-blocks/text-block/text-block__label.scss';
-@import '../toxin-blocks/text-block/text-block__text.scss';
+@import '../toxin-blocks/text-block/__label.scss';
+@import '../toxin-blocks/text-block/__text.scss';
 
 @import '../toxin-blocks/label/label.scss';
-@import '../toxin-blocks/label/label_h1.scss';
-@import '../toxin-blocks/label/label_h2.scss';
-@import '../toxin-blocks/label/label_h3.scss';
+@import '../toxin-blocks/label/_h1.scss';
+@import '../toxin-blocks/label/_h2.scss';
+@import '../toxin-blocks/label/_h3.scss';
 
 @import '../toxin-blocks/description/description.scss';
-@import '../toxin-blocks/description/description__title.scss';
-@import '../toxin-blocks/description/description__sub-title.scss';
+@import '../toxin-blocks/description/__title.scss';
+@import '../toxin-blocks/description/__sub-title.scss';
 
 @import '../toxin-blocks/section-color/section-color.scss';
-@import '../toxin-blocks/section-color/section-color__item.scss';
+@import '../toxin-blocks/section-color/__item.scss';
 
-@import '../toxin-blocks/section-text/section-text__item.scss';
+@import '../toxin-blocks/section-text/__item.scss';
 
 
 

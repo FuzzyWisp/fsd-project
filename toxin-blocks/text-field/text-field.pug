@@ -1,0 +1,7 @@
+mixin text-field(title, subTitle, value, elementClass)
+    - let x = 'text-field ' + elementClass;
+    div(class=x)
+        .text-field__titles
+            h3.text-field__title #{title}
+            h3.text-field__sub-title #{subTitle}
+        input(type='text', value=value, class='text-field__input')
