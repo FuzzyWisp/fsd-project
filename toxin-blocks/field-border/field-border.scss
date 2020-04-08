@@ -1,16 +1,11 @@
-.text-field__input{
-    width: 320px;
-    height: 44px;
+.field-border{
     background: #FFFFFF;
     border: 1px solid $dark-shade25;
     color: $dark-shade25;
     box-sizing: border-box;
     border-radius: 4px;
-    &:hover{
-        color: $dark-shade50;
-        border-color: $dark-shade50;
-    }
-    &:focus{
+    &:hover, 
+    &focus{
         color: $dark-shade50;
         border-color: $dark-shade50;
     }

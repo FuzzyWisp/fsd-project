@@ -4,4 +4,5 @@ mixin text-field(title, subTitle, value, elementClass)
         .text-field__titles
             h3.text-field__title #{title}
             h3.text-field__sub-title #{subTitle}
-        input(type='text', value=value, class='text-field__input')
+        .field-border.text-field__field-border
+            input(type='text', value=value, class='text-input text-field__text-input')

@@ -1,0 +1,10 @@
+mixin dropdown(title, subTitle, value, elementClass)
+    - let x = 'text-field ' + elementClass;
+    div(class=x)
+        .text-field__titles
+            h3.text-field__title #{title}
+            h3.text-field__sub-title #{subTitle}
+        .field-border.dropdown__field-border    
+            input(type='text', value=value, class='text-input dropdown__text-input')
+            button.arrow-down.dropdown__button 
+                i.material-icons &#xE313;
