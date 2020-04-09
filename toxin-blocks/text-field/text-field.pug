@@ -1,8 +1,14 @@
-mixin text-field(title, subTitle, value, elementClass)
+mixin text-field(title, subTitle, value, elementClass, type)
     - let x = 'text-field ' + elementClass;
     div(class=x)
         .text-field__titles
             h3.text-field__title #{title}
             h3.text-field__sub-title #{subTitle}
-        .field-border.text-field__field-border
+        if (type == 'mask')
+            input(type='text', pattern='[0-9]{2}.[0-9]{2}.[0-9]{4}', placeholder='ДД.ММ.ГГГГ' class='text-input text-field__text-input')
+        else
             input(type='text', value=value, class='text-input text-field__text-input')
+
+
+
+            

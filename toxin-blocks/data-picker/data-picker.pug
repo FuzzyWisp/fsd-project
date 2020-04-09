@@ -1,0 +1,5 @@
+mixin data-picker(title1, title2)
+    .data-picker
+        include ../text-field/text-field.pug
+        +dropdown(title1, '', '', 'text-field_small')
+        +dropdown(title2, '', '', 'text-field_small')

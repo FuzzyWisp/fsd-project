@@ -1,57 +1,62 @@
-@import './core/fonts.scss';
-@import './core/defoult.scss';
-@import './core/variables.scss';
+@import './core/fonts';
+@import './core/defoult';
+@import './core/variables';
 
-@import '../toxin-blocks/logo/_ui-kit.scss';
+@import '../toxin-blocks/logo/_ui-kit';
 
-@import '../toxin-blocks/content-section/content-section.scss';
+@import '../toxin-blocks/content-section/content-section';
 
-@import '../toxin-blocks/arrow-down/arrow-down.scss';
+@import '../toxin-blocks/arrow-down/arrow-down';
 
-@import '../toxin-blocks/color-block/color-block.scss';
-@import '../toxin-blocks/color-block/__color/_ds-75.scss';
-@import '../toxin-blocks/color-block/__color/_ds-50.scss';
-@import '../toxin-blocks/color-block/__color/_ds-25.scss';
-@import '../toxin-blocks/color-block/__color/_ds-05.scss';
-@import '../toxin-blocks/color-block/__color/_green.scss';
-@import '../toxin-blocks/color-block/__color/_ds-100.scss';
-@import '../toxin-blocks/color-block/__color/_purple.scss';
-@import '../toxin-blocks/color-block/__color.scss';
-@import '../toxin-blocks/color-block/__description.scss';
+@import '../toxin-blocks/color-block/color-block';
+@import '../toxin-blocks/color-block/__color/_ds-75';
+@import '../toxin-blocks/color-block/__color/_ds-50';
+@import '../toxin-blocks/color-block/__color/_ds-25';
+@import '../toxin-blocks/color-block/__color/_ds-05';
+@import '../toxin-blocks/color-block/__color/_green';
+@import '../toxin-blocks/color-block/__color/_ds-100';
+@import '../toxin-blocks/color-block/__color/_purple';
+@import '../toxin-blocks/color-block/__color';
+@import '../toxin-blocks/color-block/__description';
 
 @import '../toxin-blocks/text-field/__title';
 @import '../toxin-blocks/text-field/__titles';
+@import '../toxin-blocks/text-field/text-field';
 @import '../toxin-blocks/text-field/__sub-title';
 @import '../toxin-blocks/text-field/__text-input/__text-input';
+@import '../toxin-blocks/text-field/text-field/medium';
+@import '../toxin-blocks/text-field/text-field/small';
 
-@import '../toxin-blocks/field-border/field-border.scss';
+@import '../toxin-blocks/field-border/field-border';
 
-@import '../toxin-blocks/section-text/section-text.scss';
-@import '../toxin-blocks/section-text/__item.scss';
+@import '../toxin-blocks/section-text/section-text';
+@import '../toxin-blocks/section-text/__item';
 
-@import '../toxin-blocks/text-block/text-block.scss';
-@import '../toxin-blocks/text-block/__label.scss';
-@import '../toxin-blocks/text-block/__text.scss';
+@import '../toxin-blocks/text-block/text-block';
+@import '../toxin-blocks/text-block/__label';
+@import '../toxin-blocks/text-block/__text';
 
-@import '../toxin-blocks/label/label.scss';
-@import '../toxin-blocks/label/_h1.scss';
-@import '../toxin-blocks/label/_h2.scss';
-@import '../toxin-blocks/label/_h3.scss';
+@import '../toxin-blocks/label/label';
+@import '../toxin-blocks/label/_h1';
+@import '../toxin-blocks/label/_h2';
+@import '../toxin-blocks/label/_h3';
 
-@import '../toxin-blocks/text-input/text-input.scss';
+@import '../toxin-blocks/text-input/text-input';
 
-@import '../toxin-blocks/description/description.scss';
-@import '../toxin-blocks/description/__title.scss';
-@import '../toxin-blocks/description/__sub-title.scss';
+@import '../toxin-blocks/description/description';
+@import '../toxin-blocks/description/__title';
+@import '../toxin-blocks/description/__sub-title';
 
-@import '../toxin-blocks/section-color/section-color.scss';
-@import '../toxin-blocks/section-color/__item.scss';
+@import '../toxin-blocks/section-color/section-color';
+@import '../toxin-blocks/section-color/__item';
 
 @import '../toxin-blocks/dropdown/__button';
+@import '../toxin-blocks/dropdown/__text';
 @import '../toxin-blocks/dropdown/__field-border';
-@import '../toxin-blocks/dropdown/dropdown__text-input.scss';
 
-@import '../toxin-blocks/section-text/__item.scss';
+@import '../toxin-blocks/data-picker/data-picker.scss';
+
+@import '../toxin-blocks/section-text/__item';
 
 
 

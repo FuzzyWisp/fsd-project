@@ -1,6 +1,9 @@
 .dropdown__field-border{
     height: 44px;
-    //padding: 1px 0 1px 0;
     display: flex;
     flex-direction: row;
+    justify-content: space-between; 
+    &:hover .dropdown__button{
+        color: $dark-shade75;
+    }
 }

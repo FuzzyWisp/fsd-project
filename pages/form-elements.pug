@@ -7,11 +7,15 @@ block content
     .content-section
         .column
             include ../toxin-blocks/text-field/text-field.pug
-            +text-field("Я", "Кэнон", 'валуe')
-            +text-field("Я", "Кэнон")
-            +text-field("Я", "Кэнон")
+            +text-field("text field", "default", 'Email')
+            +text-field('text field', 'hover/focus', 'This is pretty awesome')
             include ../toxin-blocks/dropdown/dropdown.pug
-            +dropdown
+            +dropdown('Dropdown', 'Defoult','Сколько гостей')
+            +text-field('masked text field', 'default', '', '', 'mask')
+            include ../toxin-blocks/data-picker/data-picker.pug           
+            +data-picker('data dropdown', 'data dropdown')
+            +dropdown('filter data dropdown', 'default', '', 'text-field_medium')            
+            +text-field("text field", "default", 'Email', 'text-field_medium')
             .text-field
             .text-field.text-field_focused
             .text-field.dropdown
