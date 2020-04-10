@@ -1,0 +1,9 @@
+.text-input_without-right{
+    border-right: 0px;
+    border-radius: 4px 0 0 4px;
+    &:hover ~ .subscription-field__field-button,
+    &:focus ~ .subscription-field__field-button{
+        border: 1px solid $dark-shade50;
+        border-left: 0;        
+    }
+}

@@ -5,7 +5,7 @@ block vars
 
 block content
     .content-section
-        .column
+        .content-column
             include ../toxin-blocks/text-field/text-field.pug
             +text-field("text field", "default", 'Email')
             +text-field('text field', 'hover/focus', 'This is pretty awesome')
@@ -14,17 +14,9 @@ block content
             +text-field('masked text field', 'default', '', '', 'mask')
             include ../toxin-blocks/data-picker/data-picker.pug           
             +data-picker('data dropdown', 'data dropdown')
-            +dropdown('filter data dropdown', 'default', '', 'text-field_medium')            
-            +text-field("text field", "default", 'Email', 'text-field_medium')
-            .text-field
-            .text-field.text-field_focused
-            .text-field.dropdown
-            .text-field.text-field_masked
-            .date-dropdowns
-                .date-dropdown
-                .date-dropdown.date-dropdown_filled
-            .filter.filter_date-dropdown
-            .subscription
+            include ../toxin-blocks/subscription-field/subscription-field.pug
+            +subscription('subscription text field', 'text-field_medium')
+            +subscription('subscription text field', 'text-field_medium')            
         .switches.column
         .buttons.column
         .dropdowns.column
