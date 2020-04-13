@@ -1,5 +1,5 @@
-mixin dropdown(title, subTitle, value, elementClass)
-    - let x = 'text-field ' + elementClass;
+mixin dropdown(title, subTitle, value, mod)
+    - let x = 'text-field ' + mod;
     div(class=x)
         .text-field__titles
             h3.text-field__title #{title}

@@ -1,24 +1,31 @@
 extends ./templates/ui-kit-template.pug
 
+include ../toxin-blocks/checkbox/checkbox.pug
+include ../toxin-blocks/text-field/text-field.pug
+include ../toxin-blocks/dropdown/dropdown.pug
+include ../toxin-blocks/data-picker/data-picker.pug 
+include ../toxin-blocks/subscription-field/subscription-field.pug
+
 block vars
     - var pageTitle = 'Form Elements';
 
 block content
     .content-section
-        .content-column
-            include ../toxin-blocks/text-field/text-field.pug
+        .content-column.content-column_text-fields
             +text-field("text field", "default", 'Email')
             +text-field('text field', 'hover/focus', 'This is pretty awesome')
-            include ../toxin-blocks/dropdown/dropdown.pug
             +dropdown('Dropdown', 'Defoult','Сколько гостей')
-            +text-field('masked text field', 'default', '', '', 'mask')
-            include ../toxin-blocks/data-picker/data-picker.pug           
+            +text-field('masked text field', 'default', '', '', 'mask')          
             +data-picker('data dropdown', 'data dropdown')
-            include ../toxin-blocks/subscription-field/subscription-field.pug
+            +dropdown('filter date dropdown', '', '', 'text-field_medium')
             +subscription('subscription text field', 'text-field_medium')
-            +subscription('subscription text field', 'text-field_medium')            
-        .switches.column
-        .buttons.column
-        .dropdowns.column
-        .lists.column
-        .icons-and-comments.column
+        .content-column.content-column_switches
+            .checkboxes-container
+                h3.checkbox-title checkbox button
+                +checkbox('широкий', 'test')
+
+        .content-column.content-column_buttons
+    .content-section
+        .content-column.dropdowns
+        .content-column_lists.content-column
+        .content-column.content-column_icons-and-comments

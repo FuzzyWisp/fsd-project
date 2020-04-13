@@ -1,0 +1,7 @@
+.checkbox{
+    &:checked + .checkbox__title::before{
+        border-color: $purple;
+        background-image: url('../static/img/Vector.svg');
+        background-size: 100%;
+    }
+}
