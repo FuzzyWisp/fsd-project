@@ -1,0 +1,9 @@
+.toggle__input{
+    &:checked + .toggle__border-box::before{
+        left: 23px;
+        background: $purple-gradient;
+    }
+    &:checked + .toggle__border-box{
+        border-color: $purple;
+    }
+}

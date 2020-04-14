@@ -61,6 +61,7 @@
 
 @import '../toxin-blocks/checkbox/checkbox__title.scss';
 @import '../toxin-blocks/checkbox/checkbox.scss';
+@import '../toxin-blocks/checkbox/checkbox__input.scss';
 
 @import '../toxin-blocks/data-picker/data-picker.scss';
 
@@ -70,6 +71,11 @@
 
 @import '../toxin-blocks/content-column/content-column.scss';
 
+@import '../toxin-blocks/border-box/border-box.scss';
+
+@import '../toxin-blocks/toggle/toggle.scss';
+@import '../toxin-blocks/toggle/toggle__border-box.scss';
+@import '../toxin-blocks/toggle/toggle__input.scss';
 //@import '../toxin-blocks';
 
 
@@ -103,5 +109,5 @@ h3{
     text-transform: uppercase;
 }
 .content-wrapper{
-    padding: 0 140px 0 140px;
+    padding: 0 140px;
 }

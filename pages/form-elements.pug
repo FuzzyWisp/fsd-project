@@ -5,6 +5,7 @@ include ../toxin-blocks/text-field/text-field.pug
 include ../toxin-blocks/dropdown/dropdown.pug
 include ../toxin-blocks/data-picker/data-picker.pug 
 include ../toxin-blocks/subscription-field/subscription-field.pug
+include ../toxin-blocks/toggle/toggle.pug
 
 block vars
     - var pageTitle = 'Form Elements';
@@ -23,6 +24,10 @@ block content
             .checkboxes-container
                 h3.checkbox-title checkbox button
                 +checkbox('широкий', 'test')
+            .toggle-container
+                h3 toggle
+                +toggle('Получать спецпредложения', 'true')
+                +toggle('Получать спецпредложения')
 
         .content-column.content-column_buttons
     .content-section
