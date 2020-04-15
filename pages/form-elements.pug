@@ -24,6 +24,17 @@ block content
             .checkboxes-container
                 h3.checkbox-title checkbox button
                 +checkbox('широкий', 'test')
+            .radio-buttons-block
+                h3 radio buttons
+                .radio-container
+                    label.radio-button
+                        input(type='radio', value='male', name='gender').radio-button__input
+                        .border-box.radio-button__border-box.border-box_round
+                        p.radio-button__title male
+                    label.radio-button
+                        input(type='radio', value='female', name='gender').radio-button__input
+                        .border-box.radio-button__border-box.border-box_round                        
+                        p.radio-button__title female
             .toggle-container
                 h3 toggle
                 +toggle('Получать спецпредложения', 'true')

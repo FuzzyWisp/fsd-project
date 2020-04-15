@@ -63,6 +63,7 @@ td, th { padding: 0; text-align: left; }
 
 
 /* Inputs */
-input[type="checkbox"]{
+input[type = 'checkbox'],
+input[type = 'radio']{
   display: none;
 }
