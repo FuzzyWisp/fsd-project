@@ -1,0 +1,57 @@
+.like-counter_checked{
+    font-size: 10px;
+    color: $purple;
+}
+.like-counter{
+    font-size: 10px;
+    color: $dark-shade25;
+}
+.like{
+    color: $purple;
+    font-size: 10px;
+}
+.like_border{
+    font-size: 10px;
+    color: $dark-shade25;
+}
+.button_like{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+.rate-block + .rate-block{
+    padding-left: 20px;
+}
+.star, .star_border{    
+    color: $purple;
+    cursor: pointer;
+    background: $purple-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* CHECKBOX */
+.checkbox__item{    
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid $dark-shade25;
+    vertical-align: middle;
+    margin: 10px 10px 10px 0;
+}
+.checkbox__input:checked{ 
+    & + .checkbox__item::before{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 4px;
+        left: 4px;
+        border-radius: 4px;
+        background: $purple-gradient;
+    }
+    & + .checkbox__item{
+        border-color: $purple;
+    }
+}

@@ -21,12 +21,14 @@ block content
             +dropdown('filter date dropdown', '', '', 'text-field_medium')
             +subscription('subscription text field', 'text-field_medium')
         .content-column.content-column_switches
-            .checkboxes-container
+            .ui-kit-block
                 h3.checkbox-title checkbox button
                 +checkbox('широкий', 'test')
-            .radio-buttons-block
+                +checkbox('низкий', 'ne-test')
+                +checkbox('длинный', 'ne-est')
+            .ui-kit-block
                 h3 radio buttons
-                .radio-container
+                .radio-buttons-block.container
                     label.radio-button
                         input(type='radio', value='male', name='gender').radio-button__input
                         .border-box.radio-button__border-box.border-box_round
@@ -35,10 +37,34 @@ block content
                         input(type='radio', value='female', name='gender').radio-button__input
                         .border-box.radio-button__border-box.border-box_round                        
                         p.radio-button__title female
-            .toggle-container
+            .ui-kit-block
                 h3 toggle
                 +toggle('Получать спецпредложения', 'true')
                 +toggle('Получать спецпредложения')
+            .ui-kit-block
+                h3 like button
+                .container
+                    button.border-box.button_like
+                        i.material-icons.like_border &#xe87e;
+                        p.like-counter 0
+                    button.border-box.border-box_gradient.button_like
+                        i.material-icons.like &#xe87d;
+                        p.like-counter_checked 12
+            .ui-kit-block
+                h3 rate button
+                .container
+                    .rate-block
+                        i.material-icons.star &#xe838;
+                        i.material-icons.star &#xe838;
+                        i.material-icons.star &#xe838;
+                        i.material-icons.star &#xe838;
+                        i.material-icons.star_border &#xe83a;
+                    .rate-block
+                        i.material-icons.star &#xe838;
+                        i.material-icons.star &#xe838;
+                        i.material-icons.star &#xe838;
+                        i.material-icons.star &#xe838;
+                        i.material-icons.star &#xe838;
 
         .content-column.content-column_buttons
     .content-section

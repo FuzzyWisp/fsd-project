@@ -1,4 +1,5 @@
 mixin checkbox(title, id)
-    .checkbox
+    label.checkbox
         input(type='checkbox', id=id).checkbox__input
-        label(for=id).checkbox__title #{title}
+        .checkbox__item
+        span.checkbox__title #{title}
