@@ -1,3 +1,4 @@
+/* LIKE */
 .like-counter_checked{
     font-size: 10px;
     color: $purple;
@@ -19,6 +20,8 @@
     display: flex;
     justify-content: space-around;
 }
+
+/* RATE STARS */
 .rate-block + .rate-block{
     padding-left: 20px;
 }

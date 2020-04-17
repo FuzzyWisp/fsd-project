@@ -6,6 +6,7 @@ include ../toxin-blocks/dropdown/dropdown.pug
 include ../toxin-blocks/data-picker/data-picker.pug 
 include ../toxin-blocks/subscription-field/subscription-field.pug
 include ../toxin-blocks/toggle/toggle.pug
+include ../toxin-blocks/range-slider/range-slider.pug
 
 block vars
     - var pageTitle = 'Form Elements';
@@ -67,6 +68,9 @@ block content
                         i.material-icons.star &#xe838;
 
         .content-column.content-column_buttons
+            .ui-kit-block
+                +range-slider('range slider', '', 5000, 10000)
+
     .content-section
         .content-column.dropdowns
         .content-column_lists.content-column

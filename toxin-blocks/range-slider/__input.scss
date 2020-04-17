@@ -1,0 +1,20 @@
+.range-slider__input{
+  position: absolute;
+  z-index: 2;
+  height: 10px;
+  width: 104%;
+  top: -2px;
+  right: -1%;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  pointer-events: none;
+  &::-webkit-slider-thumb{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    -webkit-appearance: none;
+    pointer-events: all;
+  }
+  //&:hover
+}
