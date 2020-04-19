@@ -1,0 +1,27 @@
+mixin button(title, type, type2)
+
+    - var buttonClassList = 'button';
+    - var textClassList = 'button__text';
+
+    if type == 'inactive' || type2 == 'inactive'
+        - buttonClassList += ' button_inactive';
+    else if type == 'border'
+        - buttonClassList += ' button_border';
+        - textClassList += ' button__text_colored';
+    else if type == 'reset'
+        - buttonClassList += ' button_without-border';
+        - textClassList += ' button__text_gray';  
+    else if type == 'apply'
+        - buttonClassList += ' button_without-border'; 
+        - textClassList += ' button__text_colored'; 
+    else if type == 'payment'
+        - buttonClassList += ' button_filled';
+    else
+        - buttonClassList += ' button_filled'; 
+
+    button(class=buttonClassList) 
+        span(class=textClassList) #{title}
+        if type == 'payment'
+            i.material-icons.arrow-forward.button__icon &#xE5c8;
+    p #{textClassList} #{buttonClassList}
+

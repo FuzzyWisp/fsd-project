@@ -7,6 +7,7 @@ include ../toxin-blocks/data-picker/data-picker.pug
 include ../toxin-blocks/subscription-field/subscription-field.pug
 include ../toxin-blocks/toggle/toggle.pug
 include ../toxin-blocks/range-slider/range-slider.pug
+include ../toxin-blocks/button/button.pug
 
 block vars
     - var pageTitle = 'Form Elements';
@@ -70,6 +71,13 @@ block content
         .content-column.content-column_buttons
             .ui-kit-block
                 +range-slider('range slider', '', 5000, 10000)
+            .ui-kit-block
+                +button('KEK')
+                +button('LOL', 'border')                
+                +button('LOL', 'reset')
+                +button('some', 'border', 'inactive')
+                +button('apply', 'apply')
+                +button('text', 'payment')
 
     .content-section
         .content-column.dropdowns
