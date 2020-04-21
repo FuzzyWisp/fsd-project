@@ -3,10 +3,8 @@ mixin button(title, type, type2)
     - var buttonClassList = 'button';
     - var textClassList = 'button__text';
 
-    if type == 'inactive' || type2 == 'inactive'
-        - buttonClassList += ' button_inactive';
-    else if type == 'border'
-        - buttonClassList += ' button_border';
+    if type == 'border'
+        - buttonClassList += ' button_border button_small';
         - textClassList += ' button__text_colored';
     else if type == 'reset'
         - buttonClassList += ' button_without-border';
@@ -15,13 +13,18 @@ mixin button(title, type, type2)
         - buttonClassList += ' button_without-border'; 
         - textClassList += ' button__text_colored'; 
     else if type == 'payment'
-        - buttonClassList += ' button_filled';
+        - buttonClassList += ' button_filled button_large';
+        - textClassList += ' button-text_large'
     else
-        - buttonClassList += ' button_filled'; 
+        - buttonClassList += ' button_filled button_small';
+
+    if type2 == 'inactive'
+        - buttonClassList += ' button_inactive';
 
     button(class=buttonClassList) 
         span(class=textClassList) #{title}
         if type == 'payment'
-            i.material-icons.arrow-forward.button__icon &#xE5c8;
-    p #{textClassList} #{buttonClassList}
+            .button__icon-container
+                i.material-icons.arrow-forward.button__icon &#xE5c8;
+    //p #{textClassList} #{buttonClassList}
 

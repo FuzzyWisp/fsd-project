@@ -62,34 +62,56 @@
 /* butttons */
 
 .button{
+    position: relative;
     height: 44px;
     border-radius: 22px;
-    display: flex;
-    vertical-align: center;
+    cursor: pointer;
 }
 .button_filled{
     background: $purple;
     background: $purple-gradient;
 }
 .button_border{
-    border: 1px solid $purple;
-    border-color: $purple-gradient;
+    width: 99px;
+    height: 44px;
+    border: solid 2px transparent;
+    border-radius: 22px;
+    background-image: linear-gradient(white, white), radial-gradient(#f00,#3020ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    
+    /* 
+    &::before{
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 95px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 22px;
+        z-index: 0;
+        opacity: .99;
+    }
+    */
 }
 .button_inactive{
     opacity: .5;
 }
 .button_without-border{
-
+    height: 15px;
 }
 .button__text{
+    display: block;
     margin: auto 0;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
     color: #fff;
+    z-index: 2;
 }
 .button__text_colored{
     color: $purple;
@@ -99,4 +121,24 @@
 }
 .button__icon{
     color: #fff;
+    display: inline;
+}
+.button_large{
+    display: flex;
+    justify-content: flex-end;
+    width: 320px;
+}
+.button-text_large{
+    width: 232px;
+    text-align: center;
+}
+.button_small{
+    width: 99px;
+}
+.button__icon-container{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
 }
