@@ -1,0 +1,6 @@
+.ui-kit-block{
+    display: flex;
+    & + .ui-kit-block{
+        margin-top: 40px;
+    }
+}

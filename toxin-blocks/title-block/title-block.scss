@@ -1,0 +1,7 @@
+.title-block{
+
+    & + .container_vertical,
+    & + .container_horizontal{
+        margin-top: 16px;
+    }
+}

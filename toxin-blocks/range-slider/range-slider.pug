@@ -2,14 +2,15 @@ mixin range-slider(title, subTitle, min, max)
     -var valueLeft = String(((max - min) / 3) + min);
     -var valueRight = String(((max - min) - (max - min) / 3) + min);
 
-    .title-block.range-slider__title-block
-        h3.range-slider__title #{title}
-        p.range-slider__subTitle #{subTitle}
-    .range-slider
-        input(type="range", id='input-left', min=min, max=max, value=valueLeft).range-slider__input
-        input(type="range", id='input-right', min=min, max=max, value=valueRight).range-slider__input  
-        .range-slider__slider
-            .range-slider__track
-                .range-slider__range
-            .range-slider__thumb.range-slider__thumb_left
-            .range-slider__thumb.range-slider__thumb_right  
+    .range-slider__container.container_vertical
+        .title-block.range-slider__title-block
+            h3.range-slider__title #{title}
+            p.range-slider__subTitle #{subTitle}
+        .range-slider
+            input(type="range", id='input-left', min=min, max=max, value=valueLeft).range-slider__input
+            input(type="range", id='input-right', min=min, max=max, value=valueRight).range-slider__input  
+            .range-slider__slider
+                .range-slider__track
+                    .range-slider__range
+                .range-slider__thumb.range-slider__thumb_left
+                .range-slider__thumb.range-slider__thumb_right  

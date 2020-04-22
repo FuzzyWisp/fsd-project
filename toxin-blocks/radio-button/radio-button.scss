@@ -2,4 +2,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    & + .radio-button{
+        margin-left: 20px;
+    }
 }

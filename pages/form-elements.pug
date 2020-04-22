@@ -23,14 +23,17 @@ block content
             +dropdown('filter date dropdown', '', '', 'text-field_medium')
             +subscription('subscription text field', 'text-field_medium')
         .content-column.content-column_switches
-            .ui-kit-block
-                h3.checkbox-title checkbox button
-                +checkbox('широкий', 'test')
-                +checkbox('низкий', 'ne-test')
-                +checkbox('длинный', 'ne-est')
-            .ui-kit-block
-                h3 radio buttons
-                .radio-buttons-block.container
+            .ui-kit-block.container_vertical
+                .title-block
+                    h3.checkbox-title checkbox button                
+                .container_vertical                    
+                    +checkbox('широкий', 'test')
+                    +checkbox('низкий', 'ne-test')
+                    +checkbox('длинный', 'ne-est')
+            .ui-kit-block.container_vertical
+                .title-block
+                    h3 radio buttons
+                .radio-buttons-block.container_horizontal
                     label.radio-button
                         input(type='radio', value='male', name='gender').radio-button__input
                         .border-box.radio-button__border-box.border-box_round
@@ -39,22 +42,26 @@ block content
                         input(type='radio', value='female', name='gender').radio-button__input
                         .border-box.radio-button__border-box.border-box_round                        
                         p.radio-button__title female
-            .ui-kit-block
-                h3 toggle
-                +toggle('Получать спецпредложения', 'true')
-                +toggle('Получать спецпредложения')
-            .ui-kit-block
-                h3 like button
-                .container
+            .ui-kit-block.container_vertical
+                .title-block
+                    h3 toggle
+                .container_vertical        
+                    +toggle('Получать спецпредложения', 'true')
+                    +toggle('Получать спецпредложения')
+            .ui-kit-block.container_vertical
+                .title-block
+                    h3 like button
+                .container_horizontal
                     button.border-box.button_like
                         i.material-icons.like_border &#xe87e;
                         p.like-counter 0
                     button.border-box.border-box_gradient.button_like
                         i.material-icons.like &#xe87d;
                         p.like-counter_checked 12
-            .ui-kit-block
-                h3 rate button
-                .container
+            .ui-kit-block.container_vertical
+                .title-block
+                    h3 rate button
+                .container_horizontal
                     .rate-block
                         i.material-icons.star &#xe838;
                         i.material-icons.star &#xe838;
@@ -71,7 +78,7 @@ block content
         .content-column.content-column_buttons
             .ui-kit-block
                 +range-slider('range slider', '', 5000, 10000)
-            .ui-kit-block
+            .ui-kit-block.container_vertical
                 +button('KEK')
                 +button('LOL', 'border')                
                 +button('LOL', 'reset')

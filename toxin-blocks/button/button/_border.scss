@@ -1,0 +1,25 @@
+.button_border{
+    width: 99px;
+    height: 44px;
+    border: solid 2px transparent;
+    border-radius: 22px;
+    background-image: linear-gradient(white, white), 
+                      radial-gradient(circle at top , #BC9CFF 55%, #8BA4F9);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    
+    /* 
+    &::before{
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 95px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 22px;
+        z-index: 0;
+        opacity: .99;
+    }
+    */
+}
