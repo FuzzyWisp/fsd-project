@@ -1,0 +1,5 @@
+.margin-left_10{
+    & + .margin-left_10{
+        margin-left: 10px;
+    }
+}

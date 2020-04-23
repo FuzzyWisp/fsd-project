@@ -1,0 +1,5 @@
+.margin-top_20{
+    & + .margin-top_20{
+        margin-top: 20px;
+    }
+}
