@@ -1,10 +1,12 @@
 mixin dropdown(title, subTitle, value, mod)
     - let x = 'text-field ' + mod;
     div(class=x)
-        .text-field__titles
+        .title-block.text-field__title-block
             h3.text-field__title #{title}
-            h3.text-field__sub-title #{subTitle}
+            p.text-field__sub-title #{subTitle}
         .field-border.dropdown__field-border
-            p.dropdown__text #{value}
+            span.dropdown__value #{value}
             button.arrow-down.dropdown__button 
                 i.material-icons &#xE313;
+        .dropdown__menu
+            .menu__item

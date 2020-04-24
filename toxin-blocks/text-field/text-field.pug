@@ -1,7 +1,7 @@
 mixin text-field(title, subTitle, value, mod, type)
     - let x = 'text-field ' + mod;
     div(class=x)
-        .text-field__titles
+        .title-block.text-field__title-block
             h3.text-field__title #{title}
             h3.text-field__sub-title #{subTitle}
         if (type == 'mask')
