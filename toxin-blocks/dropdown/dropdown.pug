@@ -1,12 +1,32 @@
 mixin dropdown(title, subTitle, value, mod)
-    - let x = 'text-field ' + mod;
-    div(class=x)
+  - let x = 'text-field ' + mod;
+    .dropdown
+      div(class=x)
         .title-block.text-field__title-block
-            h3.text-field__title #{title}
-            p.text-field__sub-title #{subTitle}
+          h3.text-field__title #{title}
+          h3.text-field__sub-title #{subTitle}
         .field-border.dropdown__field-border
-            span.dropdown__value #{value}
-            button.arrow-down.dropdown__button 
-                i.material-icons &#xE313;
+          span.dropdown__value #{value}
+          i.material-icons.arrow-down.dropdown__icon &#xE313;   
         .dropdown__menu
-            .menu__item
+          .menu__menu-item
+            label.menu-item__label взрослые
+            .menu__counter
+              button.counter__button -
+              span.counter__value 1
+              button.counter__button +
+          .menu__menu-item
+            label.menu-item__label дети
+            .menu__counter
+              button.counter__button -
+              span.counter__value 1
+              button.counter__button +
+          .menu__menu-item
+            label.menu-item__label младенцы
+            .menu__counter
+              button.counter__button -
+              span.counter__value 1
+              button.counter__button +
+          .menu__button-container
+            button.reset очистить
+            button.accept применить

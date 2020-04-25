@@ -1,0 +1,11 @@
+.dropdown__menu{
+  position: absolute;
+  top: 63px;
+  width: 320px;
+  height: 159px;
+  border: 1px solid $dark-shade50;
+  border-radius: 0 0 4px 4px;
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+}
