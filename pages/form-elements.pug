@@ -8,6 +8,8 @@ include ../toxin-blocks/subscription-field/subscription-field.pug
 include ../toxin-blocks/toggle/toggle.pug
 include ../toxin-blocks/range-slider/range-slider.pug
 include ../toxin-blocks/button/button.pug
+include ../toxin-blocks/pagination/pagination.pug
+
 
 block vars
     - var pageTitle = 'Form Elements';
@@ -106,7 +108,10 @@ block content
                         +button('LOL', 'reset')
                 .container_horizontal.margin-top_30
                     +button('Переити к оплате', 'payment')
-
+            .ui-kit-block.container_vertical
+                h3.title-block pagination
+                .container_vertical
+                    +pagination
     .content-section
         .content-column.dropdowns
         .content-column_lists.content-column

@@ -1,5 +1,7 @@
 .menu__menu-item{
     display: flex;
     justify-content: space-between;
-    padding: 7px 7px 0 7px;
+    & + .menu__menu-item{
+      padding-top: 7px;
+    }
   }
