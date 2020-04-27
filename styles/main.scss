@@ -71,6 +71,7 @@
 @import '../toxin-blocks/dropdown/__field-border';
 @import '../toxin-blocks/dropdown/__menu_active';
 @import '../toxin-blocks/dropdown/__field-border_active';
+@import '../toxin-blocks/dropdown/__menu/_visible';
 
 @import '../toxin-blocks/checkbox/__title.scss';
 @import '../toxin-blocks/checkbox/checkbox.scss';
@@ -148,7 +149,6 @@
 @import '../toxin-blocks/pagination/__item/_current';
 @import '../toxin-blocks/pagination/__description';
 @import '../toxin-blocks/pagination/__container';
-
 
 /* TEST STYLES */
 @import '../toxin-blocks/test-styles';

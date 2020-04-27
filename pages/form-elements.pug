@@ -112,6 +112,82 @@ block content
                 h3.title-block pagination
                 .container_vertical
                     +pagination
+        .content-column
+            .ui-kit-block.container_vertical
+                .margin-top_20
+                    +dropdown('dropdown', 'default', '2 спальни, 2 кровати...', 'text-field_medium')
+                .container_vertical.margin-top_20
+                    +dropdown('dropdown', 'default', '2 спальни, 2 кровати...', 'text-field_medium')
+                    .dropdown__menu.dropdown__menu_visible
+                        .menu__menu-item
+                            label.menu-item__label спальни
+                            .menu__counter
+                                button.counter__button -
+                                span.counter__value 1
+                                button.counter__button +
+                        .menu__menu-item
+                            label.menu-item__label кровати                      
+                            .menu__counter
+                                button.counter__button -
+                                span.counter__value 1
+                                button.counter__button +
+                        .menu__menu-item
+                            label.menu-item__label ванные комнаты
+                            .menu__counter
+                                button.counter__button -
+                                span.counter__value 1
+                                button.counter__button +
+        .content-column
+            .ui-kit-block.container_vertical
+                +dropdown('dropdown', '', 'Cколько гостей')
+                .dropdown__menu.dropdown__menu_visible
+                    .menu__menu-item
+                        label.menu-item__label взрослые
+                        .menu__counter
+                            button.counter__button -
+                            span.counter__value 0
+                            button.counter__button +
+                    .menu__menu-item
+                        label.menu-item__label дети
+                        .menu__counter
+                            button.counter__button -
+                            span.counter__value 0
+                            button.counter__button +
+                    .menu__menu-item
+                        label.menu-item__label младенцы
+                        .menu__counter
+                            button.counter__button -
+                            span.counter__value 0
+                            button.counter__button +
+                    .menu__button-container
+                        +button('', 'reset')
+                        +button('принять', 'apply')
+        .content-column
+            .ui-kit-block.container_vertical
+                +dropdown('dropdown', '', '3 Гостя')
+                .dropdown__menu.dropdown__menu_visible
+                    .menu__menu-item
+                        label.menu-item__label взрослые
+                        .menu__counter
+                            button.counter__button -
+                            span.counter__value 2
+                            button.counter__button +
+                    .menu__menu-item
+                        label.menu-item__label дети
+                        .menu__counter
+                            button.counter__button -
+                            span.counter__value 1
+                            button.counter__button +
+                    .menu__menu-item
+                        label.menu-item__label младенцы
+                        .menu__counter
+                            button.counter__button -
+                            span.counter__value 1
+                            button.counter__button +
+                    .menu__button-container
+                        +button('очистить', 'reset')
+                        +button('принять', 'apply')
+
     .content-section
         .content-column.dropdowns
         .content-column_lists.content-column
