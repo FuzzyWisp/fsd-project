@@ -9,6 +9,7 @@ include ../toxin-blocks/toggle/toggle.pug
 include ../toxin-blocks/range-slider/range-slider.pug
 include ../toxin-blocks/button/button.pug
 include ../toxin-blocks/pagination/pagination.pug
+include ../toxin-blocks/checkbox-list/checkbox-list.pug
 
 
 block vars
@@ -187,6 +188,9 @@ block content
                     .menu__button-container
                         +button('очистить', 'reset')
                         +button('принять', 'apply')
+        .content-column
+            .ui-kit-block.container_vertical
+                +checkbox-list('expandable checkbox list')
 
     .content-section
         .content-column.dropdowns

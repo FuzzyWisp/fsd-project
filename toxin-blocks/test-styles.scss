@@ -32,3 +32,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+/* CHECKBOX-LIST */
+
+.checkbox-list{
+    display: flex;
+    align-items: center;
+}
+.checkbox-list__container{
+    width: 266px;
+}
