@@ -2,6 +2,7 @@
 import './styles/main.scss'
 import './toxin-blocks/range-slider/range-slider'
 import './toxin-blocks/dropdown/dropdown'
+import './toxin-blocks/checkbox-list/checkbox-list'
 //import '@src/static/img/logo.svg'
 //import '@src/styles/test.scss'
 

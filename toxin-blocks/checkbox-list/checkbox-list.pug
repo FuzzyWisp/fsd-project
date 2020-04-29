@@ -3,8 +3,9 @@ include ../checkbox/checkbox.pug
 mixin checkbox-list(title)
     .checkbox-list__container
         .checkbox-list
-            lable.title-block
-                h3 #{title}
+            .checkbox-list__header
+                lable.title-block
+                    h3 #{title}
                 i.material-icons.arrow-down.dropdown__icon &#xE313;
             .checkbox-list__menu
                 +checkbox('завтрак')

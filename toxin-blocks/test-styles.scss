@@ -38,8 +38,20 @@
 
 .checkbox-list{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
 }
 .checkbox-list__container{
     width: 266px;
+}
+.checkbox-list__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkbox-list__menu{
+    display: none;
+}
+.checkbox-list__menu_active{
+    display: block;
 }
