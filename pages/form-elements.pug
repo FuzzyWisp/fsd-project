@@ -10,6 +10,7 @@ include ../toxin-blocks/range-slider/range-slider.pug
 include ../toxin-blocks/button/button.pug
 include ../toxin-blocks/pagination/pagination.pug
 include ../toxin-blocks/checkbox-list/checkbox-list.pug
+include ../toxin-blocks/rich-checkbox-buttons/rich-checkbox-buttons.pug
 
 
 block vars
@@ -192,17 +193,9 @@ block content
             .ui-kit-block.container_vertical
                 +checkbox-list('expandable checkbox list')
         .content-column
+            h3.title-block
             .ui-kit-block.container_vertical
-                +checkbox-list('expandable checkbox list')
-        .content-column
-            .ui-kit-block.container_vertical
-                +checkbox-list('expandable checkbox list')
-        .content-column
-            .ui-kit-block.container_vertical
-                +checkbox-list('expandable checkbox list')
-        .content-column
-            .ui-kit-block.container_vertical
-                +checkbox-list('expandable checkbox list')
+                +rich-checkbox-buttons('Rich Checkbox Buttons', 'Широкий коридор', 'Помощник для инвалидов')
 
     .content-section
         .content-column.dropdowns

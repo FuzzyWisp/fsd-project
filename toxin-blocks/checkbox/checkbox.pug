@@ -1,5 +1,11 @@
-mixin checkbox(title, id)
-    label.checkbox
-        input(type='checkbox', id=id).checkbox__input
-        .checkbox__item
-        span.checkbox__title #{title}
+mixin checkbox(title, id, mod)
+    if mod == 'rich'
+        label.checkbox
+            input(type='checkbox', id=id).checkbox__input
+            .checkbox__item
+            span.checkbox__title.checkbox__title_rich #{title}
+    else
+        label.checkbox
+            input(type='checkbox', id=id).checkbox__input
+            .checkbox__item
+            span.checkbox__title #{title}

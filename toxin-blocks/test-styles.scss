@@ -55,3 +55,19 @@
 .checkbox-list__menu_active{
     display: block;
 }
+
+/* RICH CHECKBOX BUTTONS */
+
+.checkbox + .rich-checkbox-buttons__description{
+    padding: 4px 0 0 30px;
+}
+.rich-checkbox-buttons__description{    
+    font-size: 12px;
+    line-height: 14px;
+    color: $dark-shade50;
+}
+.checkbox__title_rich{    
+    font-size: 14px;
+    line-height: 18px;
+    color: $dark-shade75;
+}

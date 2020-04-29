@@ -1,0 +1,14 @@
+include ../checkbox/checkbox.pug
+
+mixin rich-checkbox-buttons(headerTitle, checkboxTitle1, checkboxTitle2)
+        .rich-checkbox-buttons
+            .rich-checkbox-buttons__item
+                +checkbox(checkboxTitle1, '', 'rich')
+                p.rich-checkbox-buttons__description 
+                    | Ширина коридоров в номере 
+                    | не менее 91 см.
+            .rich-checkbox-buttons__item
+                +checkbox(checkboxTitle2, '', 'rich')
+                p(class='rich-checkbox-buttons__description'). 
+                    На 1 этаже вас встретит специалист 
+                    и проводит до номера.

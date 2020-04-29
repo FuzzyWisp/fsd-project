@@ -1,12 +1,13 @@
 extends ./templates/ui-kit-template.pug
 
+include ../toxin-blocks/color-block/color-block.pug
+
 block vars
     - var pageTitle = 'Colors and Type';
     
 block content
     .content-section
         .section-color
-            include ../toxin-blocks/color-block/color-block.pug
             +color-block('Dark Shade 100%', '#1F2041', 'ds-100')
             +color-block('Dark Shade 75%', '#1F2041', 'ds-75')
             +color-block('Dark Shade 50%', '#1F2041', 'ds-50')
