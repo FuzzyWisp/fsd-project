@@ -13,6 +13,7 @@ include ../toxin-blocks/checkbox-list/checkbox-list.pug
 include ../toxin-blocks/rich-checkbox-buttons/rich-checkbox-buttons.pug
 include ../toxin-blocks/bullet-list/bullet-list.pug
 include ../toxin-blocks/benefits-block/benefits-block.pug
+include ../toxin-blocks/comment/comment.pug
 
 
 block vars
@@ -204,7 +205,9 @@ block content
         .content-column
             .ui-kit-block.container_vertical
                 +benefits-block
-
+        .content-column_large
+            .ui-kit-block.container_vertical
+                +comment
 
     .content-section
         .content-column.dropdowns

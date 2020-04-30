@@ -1,0 +1,16 @@
+include ../button-like/button-like.pug
+
+mixin comment()
+    .comment-container
+        .comment__top-section
+            img.comment__img(src="", alt="preview")
+            .title-block.comment__title-block
+                h3.comment__title Мурад Сарафанов
+                p.comment__sub-title 5 дней назад
+        .comment__bottom-sectione
+            .comment__button-like-container
+                +button-like
+            p.comment__text
+                |Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.
+                |И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто 
+                |не жаловался из соседей.

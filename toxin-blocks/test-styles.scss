@@ -97,3 +97,35 @@
     font-size: 14px;
     line-height: 24px;
 }
+
+
+
+//comments
+.content-column_large{
+    width: 712px;
+}
+.comment-container{
+    display: flex;
+    flex-direction: column;
+}
+.comment__top-section{
+    display: flex;
+}
+.comment__title-block{
+    display: flex;
+    flex-direction: column;
+}
+.comment__bottom-sectione{
+    display: flex;
+}
+.comment__img{
+    width: 48px;
+}
+.comment__button-like-container{
+    min-width: 48px;
+    width: 48px;
+    box-sizing: content-box;
+}
+.comment__text{
+    word-wrap: break-word;
+}
