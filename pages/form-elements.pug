@@ -12,6 +12,7 @@ include ../toxin-blocks/pagination/pagination.pug
 include ../toxin-blocks/checkbox-list/checkbox-list.pug
 include ../toxin-blocks/rich-checkbox-buttons/rich-checkbox-buttons.pug
 include ../toxin-blocks/bullet-list/bullet-list.pug
+include ../toxin-blocks/benefits-block/benefits-block.pug
 
 
 block vars
@@ -65,11 +66,11 @@ block content
                     h3 like button
                 .container_horizontal
                     .margin-left_10
-                        button.border-box.button_like
+                        button.border-box.button-like
                             i.material-icons.like_border &#xe87e;
                             p.like-counter 0
                     .margin-left_10
-                        button.border-box.border-box_gradient.button_like
+                        button.border-box.border-box_gradient.button-like
                             i.material-icons.like &#xe87d;
                             p.like-counter_checked 12
             .ui-kit-block.container_vertical
@@ -199,7 +200,11 @@ block content
                 +rich-checkbox-buttons('Rich Checkbox Buttons', 'Широкий коридор', 'Помощник для инвалидов')
         .content-column
             .ui-kit-block.container_vertical
-                +bullet-list('bullet list')
+                +bullet-list('bullet list')        
+        .content-column
+            .ui-kit-block.container_vertical
+                +benefits-block
+
 
     .content-section
         .content-column.dropdowns
