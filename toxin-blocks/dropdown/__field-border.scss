@@ -2,7 +2,8 @@
     height: 44px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
+    cursor: pointer;
     &:hover .dropdown__icon{
         color: $dark-shade75;
     }

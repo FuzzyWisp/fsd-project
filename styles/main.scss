@@ -77,6 +77,7 @@
 @import '../toxin-blocks/checkbox/checkbox.scss';
 @import '../toxin-blocks/checkbox/__input.scss';
 @import '../toxin-blocks/checkbox/__item';
+@import '../toxin-blocks/checkbox/__title/_rich';
 
 @import '../toxin-blocks/data-picker/data-picker.scss';
 
@@ -149,6 +150,15 @@
 @import '../toxin-blocks/pagination/__item/_current';
 @import '../toxin-blocks/pagination/__description';
 @import '../toxin-blocks/pagination/__container';
+
+@import '../toxin-blocks/checkbox-list/checkbox-list';
+@import '../toxin-blocks/checkbox-list/__container';
+@import '../toxin-blocks/checkbox-list/__header';
+@import '../toxin-blocks/checkbox-list/__icon/__icon';
+@import '../toxin-blocks/checkbox-list/__icon/_active';
+@import '../toxin-blocks/checkbox-list/__menu/__menu';
+@import '../toxin-blocks/checkbox-list/__menu/_active';
+
 
 /* TEST STYLES */
 @import '../toxin-blocks/test-styles';
