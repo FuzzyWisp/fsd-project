@@ -11,6 +11,7 @@ include ../toxin-blocks/button/button.pug
 include ../toxin-blocks/pagination/pagination.pug
 include ../toxin-blocks/checkbox-list/checkbox-list.pug
 include ../toxin-blocks/rich-checkbox-buttons/rich-checkbox-buttons.pug
+include ../toxin-blocks/bullet-list/bullet-list.pug
 
 
 block vars
@@ -196,6 +197,9 @@ block content
             h3.title-block rich checkbox buttons
             .ui-kit-block.container_vertical
                 +rich-checkbox-buttons('Rich Checkbox Buttons', 'Широкий коридор', 'Помощник для инвалидов')
+        .content-column
+            .ui-kit-block.container_vertical
+                +bullet-list('bullet list')
 
     .content-section
         .content-column.dropdowns
