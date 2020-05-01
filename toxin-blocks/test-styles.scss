@@ -114,8 +114,10 @@
 .comment__title-block{
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
 }
 .comment__bottom-sectione{
+    padding-top: 10px;
     display: flex;
 }
 .comment__img{
@@ -124,8 +126,26 @@
 .comment__button-like-container{
     min-width: 48px;
     width: 48px;
-    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+
 }
 .comment__text{
+    padding-left: 10px;
     word-wrap: break-word;
+}
+.comment__title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark-shade75;
+}
+.comment__sub-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark-shade25;
 }
