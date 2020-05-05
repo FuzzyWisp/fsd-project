@@ -1,3 +1,15 @@
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin border($width, $style, $color, $radius){
+    border: $width $style $color;
+    border-radius: $radius;
+}
+
+
 %text-field{
-    
+    @include size(100%, 44px);
+    @include border(1px, solid, $dark-shade25, 4px);
+
 }

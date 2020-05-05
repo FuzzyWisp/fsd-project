@@ -149,3 +149,7 @@
     line-height: 24px;
     color: $dark-shade25;
 }
+
+.new-text-field{
+    @extend %text-field
+}
