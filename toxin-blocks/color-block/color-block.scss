@@ -1,9 +1,23 @@
 .color-block{
 	display: flex;
-	flex: 1 1 auto;
+	align-items: center;
+	padding: 0 0 0 10px;
+
+	& + &{
+		padding-top: 20px;
+	}
 
 	&__description{
-    padding: 10px 10px 10px 30px;
+    padding: 0 0 0 40px;
+	}
+
+	&__title{
+		line-height: 29px;
+	}
+
+	&__sub-title{
+		line-height: 29px;
+    font-size: 19px;
 	}
 
 	&__color{        

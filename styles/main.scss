@@ -40,9 +40,6 @@
 
 @import '../toxin-blocks/field-border/field-border';
 
-@import '../toxin-blocks/section-text/section-text';
-@import '../toxin-blocks/section-text/__item';
-
 @import '../toxin-blocks/text-block/text-block';
 @import '../toxin-blocks/text-block/__label';
 @import '../toxin-blocks/text-block/__text';
@@ -54,13 +51,6 @@
 
 @import '../toxin-blocks/text-input/text-input';
 @import '../toxin-blocks/text-input/without-right';
-
-@import '../toxin-blocks/description/description';
-@import '../toxin-blocks/description/__title';
-@import '../toxin-blocks/description/__sub-title';
-
-@import '../toxin-blocks/section-color/section-color';
-@import '../toxin-blocks/section-color/__item';
 
 @import '../toxin-blocks/dropdown/__icon';
 @import '../toxin-blocks/dropdown/__value';
@@ -77,8 +67,6 @@
 @import '../toxin-blocks/checkbox/__title/_rich';
 
 @import '../toxin-blocks/data-picker/data-picker.scss';
-
-@import '../toxin-blocks/section-text/__item';
 
 @import '../toxin-blocks/subscription-field/__field-button';
 
@@ -173,14 +161,14 @@ body{
     color: $dark-shade75; 
 }
 h1{
-    font-family: "Quicksand";
+    font-family: "Quicksand-Bold", sans-serif;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
     color: $dark-shade;
 }
 h2{
-    font-family: "Quicksand";
+    font-family: "Quicksand-Bold", sans-serif;
     font-size: 19px;
     line-height: 24px;
     font-weight: 700;

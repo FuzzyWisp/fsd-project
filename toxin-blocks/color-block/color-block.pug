@@ -1,9 +1,10 @@
 mixin color-block(title, subTitle, colClass)
-    - let x = 'color-block__color_' + colClass
-    .color-block.section-color__item
-        div(class=x).color-block__color
-        include ../description/description.pug
-        +description(title, subTitle, 'color-block__description')
+    - let x = 'color-block__color color-block__color_' + colClass
+    .color-block
+        div(class=x)
+        .color-block__description
+            h2.color-block__title.title-h2 #{title}
+            span.color-block__sub-title #{subTitle}
         
             
             

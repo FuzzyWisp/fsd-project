@@ -3,16 +3,32 @@ extends ./templates/ui-kit-template.pug
 include ../toxin-blocks/color-block/color-block.pug
 
 block vars
-    - var pageTitle = 'Colors and Type';
+  - var pageTitle = 'Colors and Type';
     
 block content
-    .colors-and-type__grid-container
-        .colors-and-type__grid-item            
-            +color-block('Dark Shade 100%', '#1F2041', 'ds-100')
-            +color-block('Dark Shade 75%', '#1F2041', 'ds-75')
-            +color-block('Dark Shade 50%', '#1F2041', 'ds-50')
-            +color-block('Dark Shade 25%', '#1F2041', 'ds-25')
-            +color-block('Dark Shade 5%', '#1F2041', 'ds-05')
-            +color-block('Purple', '#BC9CFF', 'purple')
-            +color-block('Green', '#6FCF97', 'green')
-        .colors-and-type__grid-item
+  .colors-and-type__grid-container
+    .colors-and-type__grid-item            
+      +color-block('Dark Shade 100%', '#1F2041', 'ds-100')
+      +color-block('Dark Shade 75%', '#1F2041', 'ds-75')
+      +color-block('Dark Shade 50%', '#1F2041', 'ds-50')
+      +color-block('Dark Shade 25%', '#1F2041', 'ds-25')
+      +color-block('Dark Shade 5%', '#1F2041', 'ds-05')
+      +color-block('Purple', '#BC9CFF', 'purple')
+      +color-block('Green', '#6FCF97', 'green')
+    .colors-and-type__grid-item 
+      .text-block__label.label.label_h1
+        span H1
+      .text-block__text.title-h1
+        h1 This one is the sub-section or #[br]widget title 
+      .text-block__label.label.label_h2
+        span H2
+      .text-block__text.title-h2
+        h2 Next one is the item title inside #[br]widgets 
+      .text-block__label.label.label_h3
+        span H3
+      .text-block__text.title-h3
+        h3 This is a label or CTA text 
+      .text-block__label.label
+        span Body
+      .text-block__text.text    
+        p This is the body text which is used for most #[br]of the design, like paragraphs, lists, etc.
