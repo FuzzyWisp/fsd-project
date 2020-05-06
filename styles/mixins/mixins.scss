@@ -1,15 +1,51 @@
 @mixin size($width, $height){
-    width: $width;
-    height: $height;
+  width: $width;
+  height: $height;
 }
 @mixin border($width, $style, $color, $radius){
-    border: $width $style $color;
-    border-radius: $radius;
+  border: $width $style $color;
+  border-radius: $radius;
 }
 
 
 %text-field{
-    @include size(100%, 44px);
-    @include border(1px, solid, $dark-shade25, 4px);
+  @include size(100%, 44px);
+  @include border(1px, solid, $dark-shade25, 4px);
 
+}
+
+/* Headers and font sizes */
+
+%title-h1{
+  font-family: 'Quicksand-Bold', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: $dark-shade;
+}
+%title-h2{    
+  font-family: 'Quicksand-Bold', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: $dark-shade;
+}
+%title-h3{
+  font-family: 'Montserrat-Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $dark-shade;
+}
+%regular-text{
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-shade75;
 }
