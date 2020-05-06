@@ -1,4 +1,42 @@
 .color-block{
-    display: flex;
-    flex: 1 1 auto;
+	display: flex;
+	flex: 1 1 auto;
+
+	&__description{
+    padding: 10px 10px 10px 30px;
+	}
+
+	&__color{        
+		width: 70px;
+		height: 70px;
+		border-radius: 6px;
+
+		&_ds-05{
+			background-color: $dark-shade5;
+		}
+
+		&_ds-25{
+			background-color: $dark-shade25;
+		}
+
+		&_ds-50{
+			background-color: $dark-shade50;
+		}
+
+		&_ds-75{
+			background-color: $dark-shade75;
+		}
+
+		&_ds-100{
+			background-color: $dark-shade;
+		}
+
+		&_purple{
+			background-color: $purple;
+		}
+
+		&_green{
+			background-color: $green;
+		}
+	}
 }

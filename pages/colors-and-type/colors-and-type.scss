@@ -1,0 +1,13 @@
+.colors-and-type{
+    &__grid-container{
+        display: grid;
+        grid-template-columns: 395px 395px;
+        justify-content: space-between;
+        padding-top: 35px 0 130px 0;
+    }
+    &__grid-item{
+        min-height: 100px;
+        background-color: rgba(yellow, $alpha: .05);
+
+    }
+}

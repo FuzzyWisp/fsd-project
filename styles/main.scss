@@ -5,6 +5,7 @@
 @import './mixins/mixins';
 
 @import '../pages/form-elements/form-elements.scss';
+@import '../pages/colors-and-type/colors-and-type.scss';
 
 
 @import '../toxin-blocks/logo/_ui-kit';
@@ -28,15 +29,6 @@
 @import '../toxin-blocks/radio-button/__border-box';
 
 @import '../toxin-blocks/color-block/color-block';
-@import '../toxin-blocks/color-block/__color/_ds-75';
-@import '../toxin-blocks/color-block/__color/_ds-50';
-@import '../toxin-blocks/color-block/__color/_ds-25';
-@import '../toxin-blocks/color-block/__color/_ds-05';
-@import '../toxin-blocks/color-block/__color/_green';
-@import '../toxin-blocks/color-block/__color/_ds-100';
-@import '../toxin-blocks/color-block/__color/_purple';
-@import '../toxin-blocks/color-block/__color';
-@import '../toxin-blocks/color-block/__description';
 
 @import '../toxin-blocks/text-field/text-field';
 @import '../toxin-blocks/text-field/text-field/_medium';
