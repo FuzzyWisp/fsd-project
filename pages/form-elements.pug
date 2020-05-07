@@ -15,6 +15,7 @@ include ../toxin-blocks/bullet-list/bullet-list.pug
 include ../toxin-blocks/benefits-block/benefits-block.pug
 include ../toxin-blocks/comment/comment.pug
 include ../toxin-blocks/radio-buttons/radio-buttons.pug
+include ../toxin-blocks/like-button/like-button.pug
 
 
 block vars
@@ -23,6 +24,9 @@ block vars
 block content
   .form-elements__grid-container
     .form-elements__grid-item
+      +dropdown
+      +checkbox-list
+      +range-slider('range', '5-10', 5000, 10000)
     .form-elements__grid-item
       .form-elements__ui-kit-block
         .title-block
@@ -42,6 +46,14 @@ block content
         .container_vertical
           +toggle('Получать спецпредложения', 'true')
           +toggle('Получать спецпредложения')
+      .form-elements__ui-kit-block
+        .title-block
+          h3 like button
+        .container_horizontal
+          .margin-left_10
+            +like-button(2)
+          .margin-left_10
+            +like-button(12, true)
 
     .form-elements__grid-item
     .form-elements__grid-item

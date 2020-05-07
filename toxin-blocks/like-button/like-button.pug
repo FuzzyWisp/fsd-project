@@ -1,0 +1,12 @@
+mixin like-button(value, check)
+  - var likes = '0'
+  - var classList = 'like-button'
+
+  if value
+    - var likes = value
+  
+  if check
+    - classList += ' like-button_active'
+
+  button(class=classList)
+    span.like-button__counter #{likes}

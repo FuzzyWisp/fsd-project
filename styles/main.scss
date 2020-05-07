@@ -10,8 +10,6 @@
 
 @import '../toxin-blocks/logo/_ui-kit';
 
-@import '../toxin-blocks/ui-kit-block/ui-kit-block.scss';
-
 @import '../toxin-blocks/container/container_horizontal';
 @import '../toxin-blocks/container/container_vertical';
 
@@ -26,7 +24,8 @@
 
 @import '../toxin-blocks/checkbox/checkbox';
 @import '../toxin-blocks/radio-buttons/radio-buttons';
-@import '../toxin-blocks/toggle/toggle.scss';
+@import '../toxin-blocks/toggle/toggle';
+@import '../toxin-blocks/like-button/like-button';
 
 @import '../toxin-blocks/color-block/color-block';
 
@@ -61,11 +60,6 @@
 @import '../toxin-blocks/subscription-field/__field-button';
 
 @import '../toxin-blocks/content-column/content-column.scss';
-
-@import '../toxin-blocks/border-box/border-box.scss';
-@import '../toxin-blocks/border-box/_round';
-@import '../toxin-blocks/border-box/_gradient';
-
 
 @import '../toxin-blocks/range-slider/range-slider.scss';
 @import '../toxin-blocks/range-slider/__slider';

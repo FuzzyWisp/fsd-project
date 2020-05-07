@@ -1,0 +1,44 @@
+.like-button{
+  cursor: pointer;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  border-color: $dark-shade25;
+
+  &::before{
+    content: 'favorite_border';
+    @extend %material-icons;
+    position: absolute;
+    right: 23px;
+    bottom: 4px;
+    font-size: 10px;
+    color: $dark-shade25;
+  }
+
+  &_active{
+    background-image: linear-gradient(white, white), 
+                      radial-gradient(circle at top , #BC9CFF 55%, #8BA4F9);
+    background-origin: border-box;
+    background-clip: content-box, border-box;  
+
+    &::before{
+      content: 'favorite';
+      font-size: 10px;
+      color: $purple;
+    }
+
+    & .like-button__counter{
+      color: $purple;
+    }
+  }
+
+  &__counter{
+    position: absolute;
+    font-size: 10px;
+    color: $dark-shade25;
+    left: 21px;
+    bottom: 3px;
+  }
+}
