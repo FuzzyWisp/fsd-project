@@ -1,0 +1,7 @@
+mixin logo(mod)
+	if mod == 'ui-kit'
+		- var src = './static/img/ui-kit-logo.svg'
+	else
+		- var src = './static/img/toxin-logo.svg'
+		
+	img.logo_ui-kit(src=src)

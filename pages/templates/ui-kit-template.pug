@@ -1,3 +1,5 @@
+include ../../toxin-blocks/logo/logo.pug
+
 block vars
 
 doctype html
@@ -6,10 +8,11 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title #{pageTitle}
+        link(rel='icon', href='./static/img/ui-kit-logo.svg', type='image/x-icon')
         link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
     body
-        include ../../toxin-blocks/logo/_ui-kit.pug
-        +logo_ui-kit
+        
+        +logo('ui-kit')
         
         
         .content-wrapper
