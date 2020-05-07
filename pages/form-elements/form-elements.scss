@@ -14,5 +14,12 @@
       grid-column-end: 4;
     }
   }
-  &__ui-kit-block{}
+  &__ui-kit-block{    
+    display: flex;
+    flex-direction: column;
+    
+    & + &{
+        margin-top: 40px;
+    }
+  }
 }
