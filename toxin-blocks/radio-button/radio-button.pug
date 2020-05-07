@@ -1,9 +1,9 @@
-mixin radio-button()
-    -for(i=1, i<x, i++){
-        -let title = 
-        label.radio-button
-            input(type='radio', value='male', name='gender').radio__input
-            p.radio-title male 
-    }
-           
-    НЕ ДОДЕЛАН
+mixin radio-buttons()
+    label.radio-button
+      input(type='radio', value='male', name='gender', checked='true').radio-button__input
+      .radio-button__item
+      p.radio-button__title Мужчина
+    label.radio-button
+      input(type='radio', value='female', name='gender').radio-button__input
+      .radio-button__item                        
+      p.radio-button__title Женщина
