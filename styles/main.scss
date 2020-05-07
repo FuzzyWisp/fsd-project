@@ -17,11 +17,14 @@
 
 @import '../toxin-blocks/content-section/content-section';
 
-/**/
 
 @import '../toxin-blocks/arrow-down/arrow-down';
 @import '../toxin-blocks/arrow-forward/arrow-forward.scss';
 @import '../toxin-blocks/arrow-forward/_gradient.scss';
+
+/**/
+
+@import '../toxin-blocks/checkbox/checkbox.scss';
 
 @import '../toxin-blocks/radio-button/radio-button.scss';
 @import '../toxin-blocks/radio-button/__input';
@@ -55,11 +58,6 @@
 @import '../toxin-blocks/dropdown/__field-border_active';
 @import '../toxin-blocks/dropdown/__menu/_visible';
 
-@import '../toxin-blocks/checkbox/__title.scss';
-@import '../toxin-blocks/checkbox/checkbox.scss';
-@import '../toxin-blocks/checkbox/__input.scss';
-@import '../toxin-blocks/checkbox/__item';
-@import '../toxin-blocks/checkbox/__title/_rich';
 
 @import '../toxin-blocks/data-picker/data-picker.scss';
 

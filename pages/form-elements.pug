@@ -17,18 +17,25 @@ include ../toxin-blocks/comment/comment.pug
 
 
 block vars
-    - var pageTitle = 'Form Elements';
+  - var pageTitle = 'Form Elements';
 
 block content
-    .form-elements__grid-container
-        .form-elements__grid-item
-        .form-elements__grid-item
-        .form-elements__grid-item
-        .form-elements__grid-item
-        .form-elements__grid-item
-        .form-elements__grid-item
-        .form-elements__grid-item
-        .form-elements__grid-item
-        .form-elements__grid-item
-        .form-elements__grid-item
-        .form-elements__grid-item
+  .form-elements__grid-container
+    .form-elements__grid-item
+    .form-elements__grid-item
+      .form-elements__ui-kit-block
+        .title-block
+          h3 checkbox buttons
+        .container_vertical
+          +checkbox('Можно курить', 'test')
+          +checkbox('Можно с питомцами', 'test', '', 'true')
+          +checkbox('Можно пригласить гостей (до 10 человек)', 'test', '', 'true')
+    .form-elements__grid-item
+    .form-elements__grid-item
+    .form-elements__grid-item
+    .form-elements__grid-item
+    .form-elements__grid-item
+    .form-elements__grid-item
+    .form-elements__grid-item
+    .form-elements__grid-item
+    .form-elements__grid-item
