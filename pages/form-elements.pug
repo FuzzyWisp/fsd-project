@@ -16,6 +16,7 @@ include ../toxin-blocks/benefits-block/benefits-block.pug
 include ../toxin-blocks/comment/comment.pug
 include ../toxin-blocks/radio-buttons/radio-buttons.pug
 include ../toxin-blocks/like-button/like-button.pug
+include ../toxin-blocks/rate-button/rate-button.pug
 
 
 block vars
@@ -54,6 +55,14 @@ block content
             +like-button(2)
           .margin-left_10
             +like-button(12, true)
+      .form-elements__ui-kit-block
+        .title-block
+          h3 rate button
+        .container_horizontal
+          .margin-left_20
+            +rate-button(4)
+          .margin-left_20
+            +rate-button(5)
 
     .form-elements__grid-item
     .form-elements__grid-item

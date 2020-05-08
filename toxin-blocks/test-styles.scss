@@ -1,33 +1,4 @@
-/* LIKE */
-.like-counter_checked{
-    font-size: 10px;
-    color: $purple;
-}
-.like-counter{
-    font-size: 10px;
-    color: $dark-shade25;
-}
-.like{
-    color: $purple;
-    font-size: 10px;
-}
-.like_border{
-    font-size: 10px;
-    color: $dark-shade25;
-}
-
-
 /* RATE STARS */
-.rate-block + .rate-block{
-    padding-left: 20px;
-}
-.star, .star_border{    
-    color: $purple;
-    cursor: pointer;
-    background: $purple-gradient;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 
 //bullet-list

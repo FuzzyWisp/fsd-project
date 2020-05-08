@@ -6,12 +6,16 @@
   border: $width $style $color;
   border-radius: $radius;
 }
-
+@mixin text-gradient($gradient, $reserve-color){
+  color: $reserve-color;
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 %text-field{
   @include size(100%, 44px);
   @include border(1px, solid, $dark-shade25, 4px);
-
 }
 
 /* Headers and font sizes */
