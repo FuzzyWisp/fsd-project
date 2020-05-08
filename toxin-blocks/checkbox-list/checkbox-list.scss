@@ -1,5 +1,38 @@
 .checkbox-list{
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  &__header{
+    position: relative;
+
+    &:before{
+      position: absolute;
+      top: -4px;
+      left: 220px;
+      content: 'keyboard_arrow_down';
+      @extend %material-icons;
+      color: $dark-shade50;
+    }
+
+    &_active{
+
+      &:before{
+        content: 'keyboard_arrow_down';
+        transform: rotate(180deg);
+      }
+    }
+
+    & + .checkbox-list__menu{
+      padding-top: 17px;
+    }
+  }
+
+  &__menu{
+    display: none;
+
+    &_active{
+      display: block;
+    }
+  }
 }

@@ -4,9 +4,9 @@ function checkboxListOpen(){
     checkboxListArr.forEach(item => {
         item.addEventListener('click', function(){
             let checkboxListMenu = this.querySelector('.checkbox-list__menu');
-            let checkboxListIcon = this.querySelector('.checkbox-list__icon');
+            let checkboxListHeader = this.querySelector('.checkbox-list__header');
             checkboxListMenu.classList.toggle('checkbox-list__menu_active');
-            checkboxListIcon.classList.toggle('checkbox-list__icon_active');
+            checkboxListHeader.classList.toggle('checkbox-list__header_active');
         })
     })
 };

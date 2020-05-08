@@ -1,16 +1,23 @@
 include ../checkbox/checkbox.pug
 
-mixin checkbox-list(title)
-    .checkbox-list__container
-        .checkbox-list
-            .checkbox-list__header
-                lable.title-block
-                    h3 #{title}
-                i.material-icons.arrow-down.checkbox-list__icon &#xE313;
-            .checkbox-list__menu
-                +checkbox('завтрак')
-                +checkbox('Письменный стол')
-                +checkbox('Стул для кормления')
-                +checkbox('Кровати')
-                +checkbox('Телевизор')
-                +checkbox('Шампунь')
+mixin checkbox-list(title, check)
+
+  - var classListMenu = 'checkbox-list__menu'
+  - var classListHeader = 'checkbox-list__header'
+  - var checked = ''
+
+  if check
+    - classListMenu += ' checkbox-list__menu_active'
+    - classListHeader += ' checkbox-list__header_active'
+    - checked += 'true'
+
+  .checkbox-list
+    div(class=classListHeader)
+      h3.checkbox-list__title #{title} 
+    div(class=classListMenu)
+      +checkbox('завтрак')
+      +checkbox('Письменный стол', '', '', check)
+      +checkbox('Стул для кормления', '', '', check)
+      +checkbox('Кровати', '', '', check)
+      +checkbox('Телевизор')
+      +checkbox('Шампунь')
