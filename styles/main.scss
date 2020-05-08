@@ -1,27 +1,35 @@
+/* CORE */
+
 @import './core/fonts';
 @import './core/defoult';
 @import './core/variables';
-
 @import './mixins/mixins';
+
+/* PAGES */
 
 @import '../pages/form-elements/form-elements.scss';
 @import '../pages/colors-and-type/colors-and-type.scss';
 
-
-@import '../toxin-blocks/logo/_ui-kit';
+/* POSITIONING */
 
 @import '../toxin-blocks/container/container_horizontal';
 @import '../toxin-blocks/container/container_vertical';
 
-@import '../toxin-blocks/content-section/content-section';
+@import '../toxin-blocks/margin-top/_10';
+@import '../toxin-blocks/margin-top/_20';
+@import '../toxin-blocks/margin-top/_30';
+@import '../toxin-blocks/margin-top/_40';
+
+@import '../toxin-blocks/margin-left/_10';
+@import '../toxin-blocks/margin-left/_20';
+@import '../toxin-blocks/margin-left/_30';
+@import '../toxin-blocks/margin-left/_40';
 
 
-@import '../toxin-blocks/arrow-down/arrow-down';
-@import '../toxin-blocks/arrow-forward/arrow-forward.scss';
-@import '../toxin-blocks/arrow-forward/_gradient.scss';
 
-/**/
+/* TOXIN COMPONENTS */
 
+@import '../toxin-blocks/logo/_ui-kit';
 @import '../toxin-blocks/checkbox/checkbox';
 @import '../toxin-blocks/radio-buttons/radio-buttons';
 @import '../toxin-blocks/toggle/toggle';
@@ -29,9 +37,10 @@
 @import '../toxin-blocks/rate-button/rate-button';
 @import '../toxin-blocks/checkbox-list/checkbox-list';
 @import '../toxin-blocks/benefits-block/benefits-block';
-
-
 @import '../toxin-blocks/color-block/color-block';
+
+
+/* refactoring */
 
 @import '../toxin-blocks/text-field/text-field';
 @import '../toxin-blocks/text-field/text-field/_medium';
@@ -95,15 +104,6 @@
 @import '../toxin-blocks/button/__text/_colored';
 @import '../toxin-blocks/button/__text/_large';
 
-@import '../toxin-blocks/margin-top/_10';
-@import '../toxin-blocks/margin-top/_20';
-@import '../toxin-blocks/margin-top/_30';
-@import '../toxin-blocks/margin-top/_40';
-
-@import '../toxin-blocks/margin-left/_10';
-@import '../toxin-blocks/margin-left/_20';
-@import '../toxin-blocks/margin-left/_30';
-@import '../toxin-blocks/margin-left/_40';
 
 @import '../toxin-blocks/counter/__button';
 @import '../toxin-blocks/counter/__value';
@@ -121,6 +121,11 @@
 @import '../toxin-blocks/pagination/__description';
 @import '../toxin-blocks/pagination/__container';
 
+@import '../toxin-blocks/content-section/content-section';
+
+@import '../toxin-blocks/arrow-down/arrow-down';
+@import '../toxin-blocks/arrow-forward/arrow-forward.scss';
+@import '../toxin-blocks/arrow-forward/_gradient.scss';
 
 
 
