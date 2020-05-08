@@ -1,14 +1,28 @@
-mixin benefits-block
-    .benefits-block__container
-        .benefits-block
-            i.material-icons.icon_gradient.benefits-block__icon &#xe24e;
-            .benefits-block__description-block 
-                h3.benefits-block__title Комфорт
-                p.benefits-block__description Шумопоглощающие стены 
-        .benefits-block__line
-        .benefits-block
-            i.material-icons.icon_gradient.benefits-block__icon &#xe7f1;
-            .benefits-block__description-block
-                h3.benefits-block__title Удобство
-                p.benefits-block__description Окно в каждой из спален
-        .benefits-block__line
+mixin benefits-block(demo)
+
+  - var show = true
+
+  if demo
+    - show = false
+
+  .benefits-block
+    .benefits-block__item
+      i.material-icons.icon_gradient.benefits-block__icon &#xe24e;
+      .benefits-block__description-block 
+        h3.benefits-block__title Комфорт
+        span.benefits-block__description Шумопоглощающие стены 
+    .benefits-block__line
+    .benefits-block__item
+      i.material-icons.icon_gradient.benefits-block__icon &#xe7f1;
+      .benefits-block__description-block
+        h3.benefits-block__title Удобство
+        span.benefits-block__description Окно в каждой из спален
+    .benefits-block__line
+
+    if show == true
+
+      .benefits-block__item
+        i.material-icons.icon_gradient.benefits-block__icon whatshot
+        .benefits-block__description-block
+          h3.benefits-block__title Уют
+          span.benefits-block__description Номер оснащён камином

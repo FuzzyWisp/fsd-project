@@ -1,13 +1,24 @@
 .checkbox{
-  cursor: pointer;
   display: flex;
+  flex-direction: column;
+
+  &__container{
+    display: flex;
+    cursor: pointer;
+
+    & + .checkbox__description{
+        padding: 4px 0 0 30px;
+    }
+  }
+
+  &__description{    
+    font-size: 12px;
+    line-height: 14px;
+    color: $dark-shade50;
+  }
 
   & + .checkbox{
       margin-top: 10px;
-  }
-
-  & + .rich-checkbox-buttons__description{
-      padding: 4px 0 0 30px;
   }
 
   &__title{

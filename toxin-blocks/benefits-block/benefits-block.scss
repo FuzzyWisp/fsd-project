@@ -1,0 +1,46 @@
+.benefits-block{
+  display: flex;
+  flex-direction: column;
+
+  &__title{
+    color: $dark-shade75;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__description{
+    color: $dark-shade75;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__item{
+    display: flex;
+
+    & + .benefits-block__line{
+      margin-top: 20px;
+    }
+  }
+
+  &__line{
+    width: 280px;
+    height: 1px;
+    background: rgba(31, 32, 65, 0.1);
+
+    & + .benefits-block__item{
+      margin-top: 20px;
+    }
+  }
+
+  &__icon{
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+    @include text-gradient($purple-gradient, $purple);
+
+    & + .benefits-block__description-block{
+      padding-left: 10px;
+    }
+  }
+}

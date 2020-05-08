@@ -10,7 +10,6 @@ include ../toxin-blocks/range-slider/range-slider.pug
 include ../toxin-blocks/button/button.pug
 include ../toxin-blocks/pagination/pagination.pug
 include ../toxin-blocks/checkbox-list/checkbox-list.pug
-include ../toxin-blocks/rich-checkbox-buttons/rich-checkbox-buttons.pug
 include ../toxin-blocks/bullet-list/bullet-list.pug
 include ../toxin-blocks/benefits-block/benefits-block.pug
 include ../toxin-blocks/comment/comment.pug
@@ -26,8 +25,6 @@ block content
   .form-elements__grid-container
     .form-elements__grid-item
       +dropdown
-      +checkbox-list
-      +range-slider('range', '5-10', 5000, 10000)
     .form-elements__grid-item
       .form-elements__ui-kit-block
         .title-block
@@ -65,6 +62,10 @@ block content
             +rate-button(5)
 
     .form-elements__grid-item
+      .form-elements__ui-kit-block
+        .container_vertical
+          +range-slider('range slider', '5000-10000', 5000, 10000)
+
     .form-elements__grid-item
     .form-elements__grid-item
     .form-elements__grid-item
@@ -75,6 +76,14 @@ block content
         .margin-top_40
           +checkbox-list('expandeble checkbox list', true)
     .form-elements__grid-item
+      .form-elements__ui-kit-block
+        .title-block
+          h3 rich checkbox buttons
+        .container_vertical
+          +checkbox('Широкий коридор', '', 1)
+          +checkbox('Помощник для инвалидов', '', 2)
     .form-elements__grid-item
     .form-elements__grid-item
+      .form-elements__ui-kit-block
+        +benefits-block(true)
     .form-elements__grid-item

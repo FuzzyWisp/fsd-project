@@ -1,11 +1,18 @@
-mixin checkbox(title, id, mod, check)
-    if mod == 'rich'
-        label.checkbox
-            input(type='checkbox', id=id, checked=check).checkbox__input
-            .checkbox__item
-            span.checkbox__title.checkbox__title_rich #{title}
-    else
-        label.checkbox
-            input(type='checkbox', id=id, checked=check).checkbox__input
-            .checkbox__item
-            span.checkbox__title #{title}
+mixin checkbox(title, id, rich, check)
+  .checkbox
+    label.checkbox__container
+      input(type='checkbox', id=id, checked=check).checkbox__input
+      .checkbox__item
+      span.checkbox__title #{title}
+
+    if rich == 1
+      span.checkbox__description
+        |Ширина коридоров в номере
+        br
+        |не менее 91 см.
+
+    else if rich == 2
+      span.checkbox__description
+        |На 1 этаже вас встретит специалист
+        br
+        |и проводит до номера.
