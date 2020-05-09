@@ -1,36 +1,3 @@
-/* RATE STARS */
-
-
-//bullet-list
-.bullet-list{
-    display: flex;
-    flex-direction: column;
-}
-.bullet-list__description{    
-    font-size: 14px;
-    line-height: 24px;
-    color: $dark-shade75;
-}
-.bullet{
-    position: relative;
-    top: 6px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: $dark-shade25;
-    & + .bullet-list__description{
-        padding-left: 10px;
-    }
-}
-.bullet-list__line{
-    display: flex;
-    & + .bullet-list__line{
-        padding-top: 10px;
-    }
-}
-
-//benefits
-
 //comments
 .content-column_large{
     width: 712px;
@@ -80,6 +47,9 @@
     line-height: 24px;
     color: $dark-shade25;
 }
+
+
+
 
 .new-text-field{
     @extend %text-field

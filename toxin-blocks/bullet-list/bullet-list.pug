@@ -1,16 +1,10 @@
 mixin bullet-list(title)
-    .title-block
-        h3 #{title}
-    .bullet-list.container_vertical
-        .bullet-list__line
-            .bullet
-            p.bullet-list__description Нельзя с питомцами
-        .bullet-list__line
-            .bullet
-            p.bullet-list__description Без вечериное и мероприятий
-        .bullet-list__line
-            .bullet
-            p.bullet-list__description
-                |Время прибытия — после 13:00,
-                br
-                |а выезд до 12:00
+  .bullet-list
+    h3.bullet-list__title #{title}
+    ul.bullet-list__container
+      li.bullet-list__string Нельзя с питомцами
+      li.bullet-list__string Без вечериное и мероприятий
+      li.bullet-list__string
+        |Время прибытия — после 13:00,
+        br
+        |а выезд до 12:00
