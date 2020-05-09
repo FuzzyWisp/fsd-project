@@ -1,6 +1,39 @@
 .button{
-    position: relative;
+  cursor: pointer;
+  position: relative;
+  height: 44px;
+  border-radius: 22px;
+  background: $purple;
+  background: $purple-gradient;
+
+  &__text{
+    display: block;
+    margin: auto 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 2;
+  }
+
+  &_active{
+    width: 99px;
     height: 44px;
+    border: solid 2px transparent;
     border-radius: 22px;
-    cursor: pointer;
+    background-image: linear-gradient(white, white), 
+                      radial-gradient(circle at top , #BC9CFF 55%, #8BA4F9);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+  &_large{
+    display: flex;
+    justify-content: flex-end;
+    width: 320px;
+  }
+
 }
