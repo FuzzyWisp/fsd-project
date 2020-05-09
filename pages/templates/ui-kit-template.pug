@@ -12,8 +12,12 @@ html(lang="en")
         link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
     body
         
-        +logo('ui-kit')
-        
+        header.header
+            +logo('ui-kit')
+
+            .pages-links
+                a(href="https://fuzzywisp.github.io/fsd/colors-and-type.html").pages-links__link Colors and Type
+                a(href="https://fuzzywisp.github.io/fsd/form-elements.html").pages-links__link Form Elements
         
         .content-wrapper
             block content
