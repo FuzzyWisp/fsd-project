@@ -18,10 +18,8 @@ mixin button(title, type, type2)
     else
         - buttonClassList += ' button_filled button_small';
 
-    if type2 == 'inactive'
-        - buttonClassList += ' button_inactive';
-
     button(class=buttonClassList) 
         span(class=textClassList) #{title}
+
     //p #{textClassList} #{buttonClassList}
 

@@ -63,8 +63,13 @@ block content
 
     .form-elements__grid-item
       .form-elements__ui-kit-block
-        .container_vertical
+        .container_vertical.margin-top_40
           +range-slider('range slider', '5000-10000', 5000, 10000)
+        .container_vertical.margin-top_40
+          .title-block
+            h3 Buttons
+          .container_horizontal
+            +button('click me')
 
     .form-elements__grid-item
     .form-elements__grid-item

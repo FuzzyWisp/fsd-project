@@ -30,9 +30,11 @@
     background-clip: content-box, border-box;
   }
 
+  &_small{
+    min-width: 99px;
+  }
+
   &_large{
-    display: flex;
-    justify-content: flex-end;
     width: 320px;
   }
 
