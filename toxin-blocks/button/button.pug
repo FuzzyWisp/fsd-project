@@ -1,25 +1,26 @@
-mixin button(title, type, type2)
+mixin button(title, type, test)
 
-    - var buttonClassList = 'button';
-    - var textClassList = 'button__text';
+  - var buttonClassList = 'button';
+  - var textClassList = 'button__text';
 
-    if type == 'border'
-        - buttonClassList += ' button_border button_small';
-        - textClassList += ' button__text_colored';
-    else if type == 'reset'
-        - buttonClassList += ' button_without-border';
-        - textClassList += ' button__text_gray';  
-    else if type == 'apply'
-        - buttonClassList += ' button_without-border'; 
-        - textClassList += ' button__text_colored'; 
-    else if type == 'payment'
-        - buttonClassList += ' button_filled button_large';
-        - textClassList += ' button__text_large'
-    else
-        - buttonClassList += ' button_filled button_small';
+  if type == 'empty'
+    - buttonClassList += ' button_small button_empty';
+    - textClassList += ' button__text_purple';
 
-    button(class=buttonClassList) 
-        span(class=textClassList) #{title}
+  else if type == 'grey'
+    - textClassList += ' button__text_grey';
 
-    //p #{textClassList} #{buttonClassList}
+  else if type == 'purple'
+    - textClassList += ' button__text_purple'; 
+
+  else if type == 'large'
+    - buttonClassList += ' button_fill button_large';
+
+  else
+    - buttonClassList += ' button_fill button_small';
+
+  button(class=buttonClassList) 
+    span(class=textClassList) #{title}
+
+  //p #{textClassList} #{buttonClassList}
 

@@ -68,8 +68,23 @@ block content
         .container_vertical.margin-top_40
           .title-block
             h3 Buttons
-          .container_horizontal
-            +button('click me')
+          .container_horizontal.margin-top_30
+            .margin-left_20
+              +button('click me')
+            .margin-left_20
+              +button('click me')
+          .container_horizontal.margin-top_30
+            .margin-left_20
+              +button('click me', 'empty')
+            .margin-left_20
+              +button('click me', 'empty')
+          .container_horizontal.margin-top_30
+            .margin-left_20
+              +button('click me', 'purple')
+            .margin-left_20
+              +button('click me', 'grey')
+          .container_horizontal.margin-top_30
+            +button('click me', 'large')
 
     .form-elements__grid-item
     .form-elements__grid-item
