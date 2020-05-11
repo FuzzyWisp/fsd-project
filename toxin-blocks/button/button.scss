@@ -25,13 +25,23 @@
 
   &_small{
     min-width: 99px;
-    padding: 14px 20px 15px 20px;
   }
 
   &_empty{
+    @include border-gradient(2px, 22px, $purple-gradient, #fff);
+    height: 44px;
   }
 
   &_large{
     width: 320px;
+
+    &:after{
+      content: 'arrow_forward';
+      @extend %material-icons;
+      position: absolute;
+      left: 284px;
+      top: 10px;
+      color: #fff;
+    }
   }
 }

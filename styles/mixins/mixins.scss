@@ -12,6 +12,25 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@mixin border-gradient($border-width, $border-radius, $border-color, $background-color){
+  border: $border-width solid transparent;
+  border-radius: $border-radius;
+  background-clip: padding-box;
+  background-color: $background-color;
+
+  &::after{
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    margin: -$border-width;
+    border-radius: inherit;
+    background: $border-color;
+  }
+}
 
 %text-field{
   @include size(100%, 44px);
