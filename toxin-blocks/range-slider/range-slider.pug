@@ -2,11 +2,11 @@ mixin range-slider(title, subTitle, min, max)
     -var valueLeft = String(((max - min) / 3) + min);
     -var valueRight = String(((max - min) - (max - min) / 3) + min);
 
-    .range-slider__container.container_vertical
-        .title-block.range-slider__title-block
+    .range-slider
+        .range-slider__title-block
             h3.range-slider__title #{title}
-            p.range-slider__subTitle #{subTitle}
-        .range-slider
+            span.range-slider__price #{subTitle}
+        .range-slider__container
             input(type="range", id='input-left', min=min, max=max, value=valueLeft).range-slider__input
             input(type="range", id='input-right', min=min, max=max, value=valueRight).range-slider__input  
             .range-slider__slider

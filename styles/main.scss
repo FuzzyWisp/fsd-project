@@ -41,6 +41,7 @@
 @import '../toxin-blocks/bullet-list/bullet-list';
 @import '../toxin-blocks/comment/comment';
 @import '../toxin-blocks/button/button';
+@import '../toxin-blocks/range-slider/range-slider';
 
 
 /* refactoring */
@@ -77,19 +78,6 @@
 
 @import '../toxin-blocks/content-column/content-column.scss';
 
-@import '../toxin-blocks/range-slider/range-slider.scss';
-@import '../toxin-blocks/range-slider/__slider';
-@import '../toxin-blocks/range-slider/__range';
-@import '../toxin-blocks/range-slider/__input';
-@import '../toxin-blocks/range-slider/__track';
-@import '../toxin-blocks/range-slider/__title';
-@import '../toxin-blocks/range-slider/__title-block';
-@import '../toxin-blocks/range-slider/__thumb/_active';
-@import '../toxin-blocks/range-slider/__thumb/_hover';
-@import '../toxin-blocks/range-slider/__thumb/_left';
-@import '../toxin-blocks/range-slider/__thumb/_right';
-@import '../toxin-blocks/range-slider/__thumb/range-slider__thumb.scss';
-@import '../toxin-blocks/range-slider/range-slider__container.scss';
 
 @import '../toxin-blocks/title-block/title-block.scss';
 
