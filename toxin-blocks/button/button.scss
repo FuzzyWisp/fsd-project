@@ -3,6 +3,7 @@
   position: relative;
   background: transparent;
 
+
   &__text{
     @extend %title-h3;
     color: #fff;
@@ -21,6 +22,10 @@
     border-radius: 22px;
     background: $purple;
     background: $purple-gradient;
+
+    &:hover, &.button_hover{
+      opacity: .5;
+    }
   }
 
   &_small{
@@ -30,6 +35,13 @@
   &_empty{
     @include border-gradient(2px, 22px, $purple-gradient, #fff);
     height: 44px;
+
+    &:hover, &.button_hover{
+      
+      &:after{
+        opacity: .5;
+      }
+    }
   }
 
   &_large{

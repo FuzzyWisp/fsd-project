@@ -1,4 +1,4 @@
-mixin button(title, type, test)
+mixin button(title, type, hover)
 
   - var buttonClassList = 'button';
   - var textClassList = 'button__text';
@@ -14,13 +14,15 @@ mixin button(title, type, test)
     - textClassList += ' button__text_purple'; 
 
   else if type == 'large'
-    - buttonClassList += ' button_fill button_large';
+    - buttonClassList += ' button_large button_fill';
 
   else
-    - buttonClassList += ' button_fill button_small';
+    - buttonClassList += ' button_small button_fill';
+    if hover
+      - buttonClassList += ' button_fill'
+
+  if hover
+    - buttonClassList += ' button_hover';
 
   button(class=buttonClassList) 
     span(class=textClassList) #{title}
-
-  //p #{textClassList} #{buttonClassList}
-
