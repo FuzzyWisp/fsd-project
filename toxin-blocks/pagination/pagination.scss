@@ -1,3 +1,41 @@
 .pagination{
+    width: max-content;
+
+  &__description{
+    display: block;
+    color: $dark-shade50;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+  &__container{
+  display: flex;
+  }
+
+  &__item{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 15px;
+    cursor: pointer;
+  }
+
+  &__item_current{
+    background-color: $purple;
+    background: $purple-gradient;
+    color: #fff;
+  }
+
+  &__item_select{
+    background-color: $green;
+    background: $green-gradient;
+    color: #fff;
+    font-weight: bold;
+  }
 }

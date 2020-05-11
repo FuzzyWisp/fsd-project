@@ -42,6 +42,7 @@
 @import '../toxin-blocks/comment/comment';
 @import '../toxin-blocks/button/button';
 @import '../toxin-blocks/range-slider/range-slider';
+@import '../toxin-blocks/pagination/pagination';
 
 
 /* refactoring */
@@ -92,12 +93,6 @@
 @import '../toxin-blocks/menu/__counter';
 @import '../toxin-blocks/menu/__menu-item';
 
-@import '../toxin-blocks/pagination/pagination.scss';
-@import '../toxin-blocks/pagination/__item/__item';
-@import '../toxin-blocks/pagination/__item/_select';
-@import '../toxin-blocks/pagination/__item/_current';
-@import '../toxin-blocks/pagination/__description';
-@import '../toxin-blocks/pagination/__container';
 
 @import '../toxin-blocks/content-section/content-section';
 
