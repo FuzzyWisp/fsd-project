@@ -1,14 +1,22 @@
-mixin text-field(title, subTitle, value, mod, type)
-    - let x = 'text-field ' + mod;
-    div(class=x)
-        .title-block.text-field__title-block
-            h3.text-field__title #{title}
-            h3.text-field__sub-title #{subTitle}
-        if (type == 'mask')
-            input(type='text', pattern='[0-9]{2}.[0-9]{2}.[0-9]{4}', placeholder='ДД.ММ.ГГГГ' class='text-input text-field__text-input')
-        else
-            input(type='text', placeholder=value, class='text-input text-field__text-input')
+mixin text-field(title, subTitle, value, type, focus)
+
+  - let textInputClassList = 'text-field__text-input'
+  - let placeholder = value
+  - let textFieldClassList = 'text-field'
+
+  if focus
+    - textInputClassList += ' text-field__text-input_focus'
+  if type == 'sub'
+    - textInputClassList += ' text-field__text-input_subscription'
+    - textFieldClassList += ' text-field_medium'
 
 
+  div(class=textFieldClassList)
+    .text-field__title-block
 
-            
+      if title
+        h3.text-field__title #{title}
+      if subTitle
+        span.text-field__sub-title #{subTitle}
+
+    input(type='text', placeholder=value, class=textInputClassList)

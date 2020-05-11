@@ -2,16 +2,19 @@
   width: $width;
   height: $height;
 }
+
 @mixin border($width, $style, $color, $radius){
   border: $width $style $color;
   border-radius: $radius;
 }
+
 @mixin text-gradient($gradient, $reserve-color){
   color: $reserve-color;
   background: $gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 @mixin border-gradient($border-width, $border-radius, $border-color, $background-color){
   border: $border-width solid transparent;
   border-radius: $border-radius;
@@ -47,6 +50,7 @@
   line-height: 30px;
   color: $dark-shade;
 }
+
 %title-h2{    
   font-family: 'Quicksand-Bold', sans-serif;
   font-style: normal;
@@ -55,6 +59,7 @@
   line-height: 24px;
   color: $dark-shade;
 }
+
 %title-h3{
   font-family: 'Montserrat-Bold';
   font-style: normal;
@@ -64,6 +69,7 @@
   text-transform: uppercase;
   color: $dark-shade;
 }
+
 %regular-text{
   font-family: 'Montserrat-Regular';
   font-style: normal;
@@ -72,6 +78,7 @@
   line-height: 24px;
   color: $dark-shade75;
 }
+
 %material-icons {
   direction: ltr;
   display: inline-block;
