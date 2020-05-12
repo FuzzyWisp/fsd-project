@@ -8,27 +8,25 @@ mixin dropdown(title, subTitle, value, mod)
         span.dropdown__sub-title #{subTitle}
       .dropdown__body
         span.dropdown__value #{value}
-
-      else
-        .dropdown__menu
-          .dropdown__menu-item
-            label.dropdown__menu-label взрослые
-            .dropdown__menu-counter
-              button.dropdown__counter-button -
-              span.dropdown__counter-value 1
-              button.dropdown__counter-button +
-          .dropdown__menu-item
-            label.dropdown__menu-label дети
-            .dropdown__menu-counter
-              button.dropdown__counter-button -
-              span.dropdown__counter-value 1
-              button.dropdown__counter-button +
-          .dropdown__menu-item
-            label.dropdown__menu-label младенцы
-            .dropdown__menu-counter
-              button.dropdown__counter-button -
-              span.dropdown__counter-value 1
-              button.dropdown__counter-button +
-          .dropdown__menu-button-container
-            +button('очистить', 'reset')
-            +button('принять', 'apply')
+      .dropdown__menu
+        .dropdown__menu-item
+          label.dropdown__menu-label взрослые
+          .dropdown__menu-counter
+            button.dropdown__counter-button -
+            span.dropdown__counter-value 1
+            button.dropdown__counter-button +
+        .dropdown__menu-item
+          label.dropdown__menu-label дети
+          .dropdown__menu-counter
+            button.dropdown__counter-button -
+            span.dropdown__counter-value 1
+            button.dropdown__counter-button +
+        .dropdown__menu-item
+          label.dropdown__menu-label младенцы
+          .dropdown__menu-counter
+            button.dropdown__counter-button -
+            span.dropdown__counter-value 1
+            button.dropdown__counter-button +
+        .dropdown__menu-button-container
+          +button('очистить', 'reset')
+          +button('принять', 'apply')

@@ -7,10 +7,12 @@
 
 /* PAGES */
 
-@import '../pages/form-elements/form-elements.scss';
-@import '../pages/colors-and-type/colors-and-type.scss';
+@import '../pages/form-elements/form-elements';
+@import '../pages/colors-and-type/colors-and-type';
 
 /* POSITIONING */
+
+@import '../toxin-blocks/title-block/title-block';
 
 @import '../toxin-blocks/container/container_horizontal';
 @import '../toxin-blocks/container/container_vertical';
@@ -30,6 +32,8 @@
 /* TOXIN COMPONENTS */
 
 @import '../toxin-blocks/logo/_ui-kit';
+@import '../toxin-blocks/text-block/text-block';
+@import '../toxin-blocks/label/label';
 @import '../toxin-blocks/checkbox/checkbox';
 @import '../toxin-blocks/radio-buttons/radio-buttons';
 @import '../toxin-blocks/toggle/toggle';
@@ -44,29 +48,16 @@
 @import '../toxin-blocks/range-slider/range-slider';
 @import '../toxin-blocks/pagination/pagination';
 @import '../toxin-blocks/text-field/text-field';
+@import '../toxin-blocks/dropdown/dropdown.scss';
 
 
 /* refactoring */
 
 
-@import '../toxin-blocks/field-border/field-border';
-
-@import '../toxin-blocks/text-block/text-block';
-
-@import '../toxin-blocks/label/label';
-
-@import '../toxin-blocks/dropdown/__icon';
-@import '../toxin-blocks/dropdown/__value';
-@import '../toxin-blocks/dropdown/__menu/__menu';
-@import '../toxin-blocks/dropdown/__field-border';
-@import '../toxin-blocks/dropdown/__menu_active';
-@import '../toxin-blocks/dropdown/__field-border_active';
-@import '../toxin-blocks/dropdown/__menu/_visible';
 
 
 @import '../toxin-blocks/data-picker/data-picker.scss';
 
-@import '../toxin-blocks/title-block/title-block.scss';
 
 
 
@@ -74,11 +65,6 @@
 @import '../toxin-blocks/counter/__value';
 
 @import '../toxin-blocks/menu-item/__lable';
-
-@import '../toxin-blocks/menu/__button-container';
-@import '../toxin-blocks/menu/__counter';
-@import '../toxin-blocks/menu/__menu-item';
-
 
 
 /* TEST STYLES */
