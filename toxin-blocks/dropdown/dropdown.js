@@ -3,10 +3,10 @@ let dropdown = function(){
     
     dropdownArr.forEach(item => {
       item.addEventListener('click', function(){
+        let dropdownBody = this.querySelector('.dropdown__body');
         let dropdownMenu = this.querySelector('.dropdown__menu');
-        let fieldBorder = this.querySelector('.field-border');
         dropdownMenu.classList.toggle('dropdown__menu_active');
-        fieldBorder.classList.toggle('dropdown__field-border_active');
+        dropdownBody.classList.toggle('dropdown__body_active');
       })
     })
   };

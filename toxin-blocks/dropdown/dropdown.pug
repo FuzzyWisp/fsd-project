@@ -1,39 +1,50 @@
 include ../button/button.pug
 
-mixin dropdown(title, subTitle, value, mod)
+mixin dropdown(title, subTitle, value, mod, test)
 
   - let dropdownClassList = 'dropdown'
+  - let dropdownMenuClassList = 'dropdown__menu'
+  - let dropdownBodyClassList = 'dropdown__body'
 
   if mod =='medium'
-    - dropdownClassList = 'dropdown' + ' dropdown_medium'
+    - dropdownClassList += ' dropdown_medium'
   if mod =='small'
-    - dropdownClassList = 'dropdown' + ' dropdown_small'
+    - dropdownClassList += ' dropdown_small'
+  if test
+    - dropdownMenuClassList += ' dropdown__menu_active'
+    - dropdownBodyClassList += ' dropdown__body_active'
 
   div(class=dropdownClassList)
     .dropdown__title-block
       h3.dropdown__title #{title}
       span.dropdown__sub-title #{subTitle}
-    .dropdown__body
+    div(class=dropdownBodyClassList)
       span.dropdown__value #{value}
-    .dropdown__menu
-      .dropdown__menu-item
-        label.dropdown__menu-label взрослые
-        .dropdown__menu-counter
-          button.dropdown__counter-button -
-          span.dropdown__counter-value 1
-          button.dropdown__counter-button +
-      .dropdown__menu-item
-        label.dropdown__menu-label дети
-        .dropdown__menu-counter
-          button.dropdown__counter-button -
-          span.dropdown__counter-value 1
-          button.dropdown__counter-button +
-      .dropdown__menu-item
-        label.dropdown__menu-label младенцы
-        .dropdown__menu-counter
-          button.dropdown__counter-button -
-          span.dropdown__counter-value 1
-          button.dropdown__counter-button +
-      .dropdown__menu-button-container
-        +button('очистить', 'reset')
-        +button('принять', 'apply')
+    
+    if !mod || mod == 'medium'
+
+      div(class=dropdownMenuClassList)
+        .dropdown__menu-item
+          label.dropdown__menu-label взрослые
+          .dropdown__menu-counter
+            button.dropdown__counter-button -
+            span.dropdown__counter-value 1
+            button.dropdown__counter-button +
+        .dropdown__menu-item
+          label.dropdown__menu-label дети
+          .dropdown__menu-counter
+            button.dropdown__counter-button -
+            span.dropdown__counter-value 1
+            button.dropdown__counter-button +
+        .dropdown__menu-item
+          label.dropdown__menu-label младенцы
+          .dropdown__menu-counter
+            button.dropdown__counter-button -
+            span.dropdown__counter-value 1
+            button.dropdown__counter-button +
+
+        if !mod
+
+          .dropdown__menu-button-container
+            +button('очистить', 'text-grey')
+            +button('принять', 'text-purple')

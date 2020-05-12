@@ -1,5 +1,6 @@
 .dropdown{
   width: 320px;
+  position: relative;
 
   &_medium{
     width: 266px;
@@ -37,16 +38,17 @@
     align-items: center;
     position: relative;
 
+    &_active{
+      border-color: $dark-shade50;
+      border-radius: 4px 4px 0 0;
+    }
+
     &:before{
       content: 'keyboard_arrow_down';
       @extend %material-icons;
       color: $dark-shade50;
       position: absolute;
       right: 12px;      
-    }
-
-    &_medium{
-      width: 266px;
     }
 
     &:hover{
@@ -71,6 +73,7 @@
     flex-direction: column;
     padding: 7px;
     box-shadow: 0px 10px 20px $dark-shade5;
+    padding: 7px 7px 7px 15px;
 
     &_active{
       display: flex;
@@ -79,7 +82,7 @@
     }
   }
 
-  &__counter{
+  &__menu-counter{
     width: 92px;
     display: flex;
     flex-direction: row;
@@ -90,15 +93,42 @@
   &__menu-item{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    & + .menu__menu-item{
+    & + &{
       padding-top: 7px;
+    }
+
+    & + .dropdown__menu-button-container{
+      padding-top: 20px;
     }
   }
 
-  &__button-container{
+  &__menu-label{
+    @extend %title-h3;
+  }
+
+  &__counter-button{
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $dark-shade25;
+    border-radius: 22px;
+    color: $dark-shade50;
+  }
+
+  &__counter-value{
+    @extend %title-h3;
+  }
+
+  &__menu-button-container{
     display: flex;
     justify-content: space-between;
-    padding: 20px 7px 6px 7px;
+    padding-bottom: 6px;
   }
 }

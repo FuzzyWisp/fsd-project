@@ -94,9 +94,9 @@ block content
               +button('click me', 'empty', true)
           .container_horizontal.margin-top_30
             .margin-left_20
-              +button('click me', 'purple')
+              +button('click me', 'text-purple')
             .margin-left_20
-              +button('click me', 'grey')
+              +button('click me', 'text-grey')
           .container_horizontal.margin-top_30
             +button('Перейти к оплате', 'large')
         .container_vertical.margin-top_40
@@ -106,13 +106,22 @@ block content
             +pagination
 
     .form-elements__grid-item
+      .form-elements__ui-kit-block
+        .container_vertical
+          .margin-top_20
+            +dropdown('dropdown', 'Default', '2 спальни, 2 кровати...', 'medium')
+          .margin-top_20
+            +dropdown('dropdown', 'expanded', '2 спальни, 2 кровати...', 'medium', true)
 
     .form-elements__grid-item
+      .form-elements__ui-kit-block
+          +dropdown('dropdown', '', 'Сколько гостей', '', true)
 
     .form-elements__grid-item
+      .form-elements__ui-kit-block
+          +dropdown('dropdown', '', '3 гостя', '', true)
 
     .form-elements__grid-item
-
       .form-elements__ui-kit-block
         .margin-top_40
           +checkbox-list('expandeble checkbox list')
@@ -137,4 +146,3 @@ block content
     .form-elements__grid-item
       .form-elements__ui-kit-block
         +comment
-
