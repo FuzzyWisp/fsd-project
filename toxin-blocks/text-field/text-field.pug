@@ -19,4 +19,8 @@ mixin text-field(title, subTitle, value, type, focus)
       if subTitle
         span.text-field__sub-title #{subTitle}
 
-    input(type='text', placeholder=value, class=textInputClassList)
+    .text-field__container
+      input(type='text', placeholder=value, class=textInputClassList)
+
+      if type == 'sub'
+        button.text-field__button

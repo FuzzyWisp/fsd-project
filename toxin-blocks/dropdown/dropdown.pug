@@ -3,55 +3,32 @@ include ../button/button.pug
 mixin dropdown(title, subTitle, value, mod)
   - let classList = 'text-field ' + mod;
     .dropdown
-      div(class=classList)
-        .title-block.text-field__title-block
-          h3.text-field__title #{title}
-          h3.text-field__sub-title #{subTitle}
-        .field-border.dropdown__field-border
-          span.dropdown__value #{value}
-          i.material-icons.arrow-down.dropdown__icon &#xE313;   
-        if mod == 'text-field_medium'
-          .dropdown__menu.dropdown__menu_medium
-            .menu__menu-item
-              label.menu-item__label спальни
-              .menu__counter
-                button.counter__button -
-                span.counter__value 1
-                button.counter__button +
-            .menu__menu-item
-              label.menu-item__label кровати                      
-              .menu__counter
-                button.counter__button -
-                span.counter__value 1
-                button.counter__button +
-            .menu__menu-item
-              label.menu-item__label ванные комнаты
-              .menu__counter
-                button.counter__button -
-                span.counter__value 1
-                button.counter__button +
-        else if mod == 'text-field_small'
+      .dropdown__title-block
+        h3.dropdown__title #{title}
+        span.dropdown__sub-title #{subTitle}
+      .dropdown__body
+        span.dropdown__value #{value}
 
-        else
-          .dropdown__menu.dropdown__menu_large
-            .menu__menu-item
-              label.menu-item__label взрослые
-              .menu__counter
-                button.counter__button -
-                span.counter__value 1
-                button.counter__button +
-            .menu__menu-item
-              label.menu-item__label дети
-              .menu__counter
-                button.counter__button -
-                span.counter__value 1
-                button.counter__button +
-            .menu__menu-item
-              label.menu-item__label младенцы
-              .menu__counter
-                button.counter__button -
-                span.counter__value 1
-                button.counter__button +
-            .menu__button-container
-              +button('очистить', 'reset')
-              +button('принять', 'apply')
+      else
+        .dropdown__menu
+          .dropdown__menu-item
+            label.dropdown__menu-label взрослые
+            .dropdown__menu-counter
+              button.dropdown__counter-button -
+              span.dropdown__counter-value 1
+              button.dropdown__counter-button +
+          .dropdown__menu-item
+            label.dropdown__menu-label дети
+            .dropdown__menu-counter
+              button.dropdown__counter-button -
+              span.dropdown__counter-value 1
+              button.dropdown__counter-button +
+          .dropdown__menu-item
+            label.dropdown__menu-label младенцы
+            .dropdown__menu-counter
+              button.dropdown__counter-button -
+              span.dropdown__counter-value 1
+              button.dropdown__counter-button +
+          .dropdown__menu-button-container
+            +button('очистить', 'reset')
+            +button('принять', 'apply')

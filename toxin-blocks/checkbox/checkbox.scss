@@ -45,7 +45,8 @@
 
   &__input{
 
-    &:checked{ 
+    &:checked{
+
       & + .checkbox__item::before{
         content: '';
         position: absolute;
@@ -59,6 +60,7 @@
         border-image-slice: 1;
         transform: rotate(45deg);
       }
+      
       & + .checkbox__item{
         border-color: $purple;
       }
