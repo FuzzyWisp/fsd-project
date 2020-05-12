@@ -1,4 +1,13 @@
 .dropdown{
+  width: 320px;
+
+  &_medium{
+    width: 266px;
+  }
+
+  &_small{
+    width: 150px;
+  }
 
   &__title-block{
     display: flex;
@@ -28,12 +37,16 @@
     align-items: center;
     position: relative;
 
-    &:after{
+    &:before{
       content: 'keyboard_arrow_down';
       @extend %material-icons;
       color: $dark-shade50;
       position: absolute;
-      left: 285px;      
+      right: 12px;      
+    }
+
+    &_medium{
+      width: 266px;
     }
 
     &:hover{
@@ -77,6 +90,7 @@
   &__menu-item{
     display: flex;
     justify-content: space-between;
+
     & + .menu__menu-item{
       padding-top: 7px;
     }

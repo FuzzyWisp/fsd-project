@@ -1,32 +1,39 @@
 include ../button/button.pug
 
 mixin dropdown(title, subTitle, value, mod)
-  - let classList = 'text-field ' + mod;
-    .dropdown
-      .dropdown__title-block
-        h3.dropdown__title #{title}
-        span.dropdown__sub-title #{subTitle}
-      .dropdown__body
-        span.dropdown__value #{value}
-      .dropdown__menu
-        .dropdown__menu-item
-          label.dropdown__menu-label взрослые
-          .dropdown__menu-counter
-            button.dropdown__counter-button -
-            span.dropdown__counter-value 1
-            button.dropdown__counter-button +
-        .dropdown__menu-item
-          label.dropdown__menu-label дети
-          .dropdown__menu-counter
-            button.dropdown__counter-button -
-            span.dropdown__counter-value 1
-            button.dropdown__counter-button +
-        .dropdown__menu-item
-          label.dropdown__menu-label младенцы
-          .dropdown__menu-counter
-            button.dropdown__counter-button -
-            span.dropdown__counter-value 1
-            button.dropdown__counter-button +
-        .dropdown__menu-button-container
-          +button('очистить', 'reset')
-          +button('принять', 'apply')
+
+  - let dropdownClassList = 'dropdown'
+
+  if mod =='medium'
+    - dropdownClassList = 'dropdown' + ' dropdown_medium'
+  if mod =='small'
+    - dropdownClassList = 'dropdown' + ' dropdown_small'
+
+  div(class=dropdownClassList)
+    .dropdown__title-block
+      h3.dropdown__title #{title}
+      span.dropdown__sub-title #{subTitle}
+    .dropdown__body
+      span.dropdown__value #{value}
+    .dropdown__menu
+      .dropdown__menu-item
+        label.dropdown__menu-label взрослые
+        .dropdown__menu-counter
+          button.dropdown__counter-button -
+          span.dropdown__counter-value 1
+          button.dropdown__counter-button +
+      .dropdown__menu-item
+        label.dropdown__menu-label дети
+        .dropdown__menu-counter
+          button.dropdown__counter-button -
+          span.dropdown__counter-value 1
+          button.dropdown__counter-button +
+      .dropdown__menu-item
+        label.dropdown__menu-label младенцы
+        .dropdown__menu-counter
+          button.dropdown__counter-button -
+          span.dropdown__counter-value 1
+          button.dropdown__counter-button +
+      .dropdown__menu-button-container
+        +button('очистить', 'reset')
+        +button('принять', 'apply')
