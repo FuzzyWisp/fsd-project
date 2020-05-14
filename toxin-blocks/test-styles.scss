@@ -1,22 +1,15 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-}
-.pages-links{
+.head{
+  display: flex;
+  justify-content: space-between;
+
+  &__links{
     padding: 20px;
-
-    &__link{
-
-        & + &{
-            margin-left: 20px;
-        }
     }
-}
+    
+  &__link{
 
-
-
-
-
-.new-text-field{
-    @extend %text-field
+    & + &{
+      margin-left: 20px;
+    }
+  }
 }

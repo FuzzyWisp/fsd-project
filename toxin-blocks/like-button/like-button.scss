@@ -18,7 +18,8 @@
   }
 
   &_active{
-    @include border-gradient(1px, 10px, $purple-gradient, #fff);
+    @include border-gradient(1px, 10px, $purple-gradient);
+    background-color: #fff;
 
     &::before{
       content: 'favorite';

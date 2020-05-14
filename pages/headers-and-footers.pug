@@ -1,0 +1,12 @@
+extends ./templates/ui-kit-template.pug
+
+include ../layouts/header/header.pug
+
+
+block vars
+  - var pageTitle = 'Headers & Footers';
+
+block content
+  .headers-and-footers__container
+    .headers-and-footers__item
+      +header

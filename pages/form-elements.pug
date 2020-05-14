@@ -20,129 +20,130 @@ include ../toxin-blocks/rate-button/rate-button.pug
 block vars
   - var pageTitle = 'Form Elements';
 
-block content
-  .form-elements__grid-container
-    .form-elements__grid-item
-      .container_vertical
-        .margin-top_20
-          +text-field('text field', 'Defoult', 'Email')
-        .margin-top_20
-          +text-field('text field', 'hover/focus', 'This is pretty awesome', '', true)
-        .margin-top_20
-          +dropdown('dropdown', 'defoult', 'Сколько гостей')
-        .margin-top_20.margin-top_40
-          +text-field('masked text field', 'defoult', 'ДД.ММ.ГГГГ', 'mask')
-        .margin-top_40
-          +data-picker('date Dropdown', 'date Dropdown', true)
-        .margin-top_40
-          +dropdown('filter date dropdown', '', '19 авг - 23 авг', 'medium')
-        .margin-top_40
-          +text-field('subscrition text field', '', 'Email', 'sub')
-
-    .form-elements__grid-item
-      .form-elements__ui-kit-block
-        .title-block
-          h3 checkbox buttons
+block content        
+  .content-wrapper
+    .form-elements__grid-container
+      .form-elements__grid-item
         .container_vertical
-          +checkbox('Можно курить', 'test')
-          +checkbox('Можно с питомцами', 'test', '', 'true')
-          +checkbox('Можно пригласить гостей (до 10 человек)', 'test', '', 'true')
-      .form-elements__ui-kit-block
-        .title-block
-          h3 radio buttons
-        .container_horizontal
-          +radio-buttons
-      .form-elements__ui-kit-block
-        .title-block
-          h3 toggle
-        .container_vertical
-          +toggle('Получать спецпредложения', 'true')
-          +toggle('Получать спецпредложения')
-      .form-elements__ui-kit-block
-        .title-block
-          h3 like button
-        .container_horizontal
-          .margin-left_10
-            +like-button(2)
-          .margin-left_10
-            +like-button(12, true)
-      .form-elements__ui-kit-block
-        .title-block
-          h3 rate button
-        .container_horizontal
-          .margin-left_20
-            +rate-button(4)
-          .margin-left_20
-            +rate-button(5)
+          .margin-top_20
+            +text-field('text field', 'Defoult', 'Email')
+          .margin-top_20
+            +text-field('text field', 'hover/focus', 'This is pretty awesome', '', true)
+          .margin-top_20
+            +dropdown('dropdown', 'defoult', 'Сколько гостей')
+          .margin-top_20.margin-top_40
+            +text-field('masked text field', 'defoult', 'ДД.ММ.ГГГГ', 'mask')
+          .margin-top_40
+            +data-picker('date Dropdown', 'date Dropdown', true)
+          .margin-top_40
+            +dropdown('filter date dropdown', '', '19 авг - 23 авг', 'medium')
+          .margin-top_40
+            +text-field('subscrition text field', '', 'Email', 'sub')
 
-    .form-elements__grid-item
-      .form-elements__ui-kit-block
-        .container_vertical.margin-top_40
-          +range-slider('range slider', '5000-10000', 5000, 10000)
-        .container_vertical.margin-top_40
+      .form-elements__grid-item
+        .form-elements__ui-kit-block
           .title-block
-            h3 Buttons
-          .container_horizontal.margin-top_30
-            .margin-left_20
-              +button('click me')
-            .margin-left_20
-              +button('click me', '', true)
-          .container_horizontal.margin-top_30
-            .margin-left_20
-              +button('click me', 'empty')
-            .margin-left_20
-              +button('click me', 'empty', true)
-          .container_horizontal.margin-top_30
-            .margin-left_20
-              +button('click me', 'text-purple')
-            .margin-left_20
-              +button('click me', 'text-grey')
-          .container_horizontal.margin-top_30
-            +button('Перейти к оплате', 'large')
-        .container_vertical.margin-top_40
+            h3 checkbox buttons
+          .container_vertical
+            +checkbox('Можно курить', 'test')
+            +checkbox('Можно с питомцами', 'test', '', 'true')
+            +checkbox('Можно пригласить гостей (до 10 человек)', 'test', '', 'true')
+        .form-elements__ui-kit-block
           .title-block
-            h3 pagination
+            h3 radio buttons
           .container_horizontal
-            +pagination
+            +radio-buttons
+        .form-elements__ui-kit-block
+          .title-block
+            h3 toggle
+          .container_vertical
+            +toggle('Получать спецпредложения', 'true')
+            +toggle('Получать спецпредложения')
+        .form-elements__ui-kit-block
+          .title-block
+            h3 like button
+          .container_horizontal
+            .margin-left_10
+              +like-button(2)
+            .margin-left_10
+              +like-button(12, true)
+        .form-elements__ui-kit-block
+          .title-block
+            h3 rate button
+          .container_horizontal
+            .margin-left_20
+              +rate-button(4)
+            .margin-left_20
+              +rate-button(5)
 
-    .form-elements__grid-item
-      .form-elements__ui-kit-block
-        .container_vertical
-          .margin-top_20
-            +dropdown('dropdown', 'Default', '2 спальни, 2 кровати...', 'medium')
-          .margin-top_20
-            +dropdown('dropdown', 'expanded', '2 спальни, 2 кровати...', 'medium', true)
+      .form-elements__grid-item
+        .form-elements__ui-kit-block
+          .container_vertical.margin-top_40
+            +range-slider('range slider', '5000-10000', 5000, 10000)
+          .container_vertical.margin-top_40
+            .title-block
+              h3 Buttons
+            .container_horizontal.margin-top_30
+              .margin-left_20
+                +button('click me')
+              .margin-left_20
+                +button('click me', '', true)
+            .container_horizontal.margin-top_30
+              .margin-left_20
+                +button('click me', 'empty')
+              .margin-left_20
+                +button('click me', 'empty', true)
+            .container_horizontal.margin-top_30
+              .margin-left_20
+                +button('click me', 'text-purple')
+              .margin-left_20
+                +button('click me', 'text-grey')
+            .container_horizontal.margin-top_30
+              +button('Перейти к оплате', 'large')
+          .container_vertical.margin-top_40
+            .title-block
+              h3 pagination
+            .container_horizontal
+              +pagination
 
-    .form-elements__grid-item
-      .form-elements__ui-kit-block
-          +dropdown('dropdown', '', 'Сколько гостей', '', true)
+      .form-elements__grid-item
+        .form-elements__ui-kit-block
+          .container_vertical
+            .margin-top_20
+              +dropdown('dropdown', 'Default', '2 спальни, 2 кровати...', 'medium')
+            .margin-top_20
+              +dropdown('dropdown', 'expanded', '2 спальни, 2 кровати...', 'medium', true)
 
-    .form-elements__grid-item
-      .form-elements__ui-kit-block
-          +dropdown('dropdown', '', '3 гостя', '', true)
+      .form-elements__grid-item
+        .form-elements__ui-kit-block
+            +dropdown('dropdown', '', 'Сколько гостей', '', true)
 
-    .form-elements__grid-item
-      .form-elements__ui-kit-block
-        .margin-top_40
-          +checkbox-list('expandeble checkbox list')
-        .margin-top_40
-          +checkbox-list('expandeble checkbox list', true)
-    .form-elements__grid-item
-      .form-elements__ui-kit-block
-        .title-block
-          h3 rich checkbox buttons
-        .container_vertical
-          +checkbox('Широкий коридор', '', 1)
-          +checkbox('Помощник для инвалидов', '', 2)
+      .form-elements__grid-item
+        .form-elements__ui-kit-block
+            +dropdown('dropdown', '', '3 гостя', '', true)
 
-    .form-elements__grid-item
-      .form-elements__ui-kit-block
-        +bullet-list('bullet-list')
+      .form-elements__grid-item
+        .form-elements__ui-kit-block
+          .margin-top_40
+            +checkbox-list('expandeble checkbox list')
+          .margin-top_40
+            +checkbox-list('expandeble checkbox list', true)
+      .form-elements__grid-item
+        .form-elements__ui-kit-block
+          .title-block
+            h3 rich checkbox buttons
+          .container_vertical
+            +checkbox('Широкий коридор', '', 1)
+            +checkbox('Помощник для инвалидов', '', 2)
 
-    .form-elements__grid-item
-      .form-elements__ui-kit-block
-        +benefits-block(true)
+      .form-elements__grid-item
+        .form-elements__ui-kit-block
+          +bullet-list('bullet-list')
 
-    .form-elements__grid-item
-      .form-elements__ui-kit-block
-        +comment
+      .form-elements__grid-item
+        .form-elements__ui-kit-block
+          +benefits-block(true)
+
+      .form-elements__grid-item
+        .form-elements__ui-kit-block
+          +comment

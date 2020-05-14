@@ -1,0 +1,12 @@
+.cards{
+
+  &__grid-container{
+    display: grid;
+    grid-template-columns: 380px 380px 380px;
+    grid-auto-flow: column;
+  }
+
+  &__grid-item{
+
+  }
+}

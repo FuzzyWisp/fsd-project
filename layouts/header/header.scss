@@ -1,0 +1,49 @@
+.header{
+  background-color: #fff;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  z-index: -2;
+
+  &__content-wrapper{
+    display: flex;
+    width: 100%;
+    padding: 0 140px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link{
+
+    & + &{
+      padding-left: 30px;
+    }
+
+    & + .header__expanded-button{
+      padding-left: 30px;
+    }
+
+    & + .header__button{
+      padding-left: 30px;
+    }
+  }
+
+  &__expanded-button{
+
+    & + .header__link{
+      padding-left: 44px;
+    }
+  }
+
+  &__button{
+
+    & + &{
+      padding-left: 20px;
+    }
+  }
+
+  &__navigation-block{
+    display: flex;
+    align-items: center;
+  }
+}

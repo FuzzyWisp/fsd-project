@@ -1,0 +1,17 @@
+include ../../toxin-blocks/button/button.pug
+
+mixin header
+  .header          
+    .header__content-wrapper
+      img.header__logo(src='./static/img/toxin-logo.svg')
+      .header__navigation-block
+        a(href="#").header__link Home
+        a(href="#").header__link About Us
+        label.header__expanded-button Services
+        a(href="#").header__link Careers
+        a(href="#").header__link News
+        a(href="#").header__link Documentation
+        .header__button
+          +button('login', 'empty')
+        .header__button
+          +button('register')

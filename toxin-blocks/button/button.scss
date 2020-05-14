@@ -1,8 +1,6 @@
 .button{
   cursor: pointer;
   position: relative;
-  background: transparent;
-
 
   &__text{
     @extend %title-h3;
@@ -33,7 +31,8 @@
   }
 
   &_empty{
-    @include border-gradient(2px, 22px, $purple-gradient, #fff);
+    @include border-gradient(2px, 22px, $purple-gradient);
+    background-color: #fff;
     height: 44px;
 
     &:hover, &.button_hover{
