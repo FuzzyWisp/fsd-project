@@ -16,7 +16,13 @@
 }
 
 @mixin border-gradient($border-width, $border-radius, $border-color){
-
+  border: $border-width solid transparent;
+  border-radius: $border-radius;
+  box-shadow: 2px 1000px 1px #fff inset;
+  background: linear-gradient(rgba(255, 255, 255, 0),
+              rgba(255, 255, 255, 0)), $border-color;
+  background-clip: content-box, border-box;
+  background-origin: border-box;
 }
 
 %text-field{

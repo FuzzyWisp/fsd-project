@@ -1,17 +1,28 @@
 include ../../toxin-blocks/button/button.pug
 
-mixin header
+mixin header(login, demo)
+
+  - var linkClassList = 'header__link'
+
+  if demo
+    - linkClassList += ' header__link_active'
+
   .header          
     .header__content-wrapper
       img.header__logo(src='./static/img/toxin-logo.svg')
       .header__navigation-block
-        a(href="#").header__link Home
+        a(class=linkClassList, href="#") Home
         a(href="#").header__link About Us
         label.header__expanded-button Services
         a(href="#").header__link Careers
         a(href="#").header__link News
         a(href="#").header__link Documentation
-        .header__button
-          +button('login', 'empty')
-        .header__button
-          +button('register')
+
+        if login
+          .header__user-name Cosmin Negoita
+
+        else
+          .header__button
+            +button('login', 'empty')
+          .header__button
+            +button('register')

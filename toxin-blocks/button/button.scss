@@ -36,10 +36,7 @@
     height: 44px;
 
     &:hover, &.button_hover{
-      
-      &:after{
-        opacity: .5;
-      }
+      @include border-gradient(2px, 22px, $opacity-purple-gradient);      
     }
   }
 

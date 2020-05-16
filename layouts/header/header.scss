@@ -3,7 +3,6 @@
   height: 70px;
   display: flex;
   align-items: center;
-  z-index: -2;
 
   &__content-wrapper{
     display: flex;
@@ -14,6 +13,17 @@
   }
 
   &__link{
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark-shade50;
+
+    &_active, &:focus{
+      font-weight: bold;
+      color: $dark-shade75;
+    }
 
     & + &{
       padding-left: 30px;
@@ -26,9 +36,28 @@
     & + .header__button{
       padding-left: 30px;
     }
+
+    & + .header__user-name{
+      padding-left: 60px;
+    }
   }
 
   &__expanded-button{
+    position: relative;
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark-shade50;
+
+    &:after{
+      content: 'expand_more';
+      @extend %material-icons;
+      color: $dark-shade50;
+      position: absolute;
+      right: -23px;
+    }
 
     & + .header__link{
       padding-left: 44px;
@@ -45,5 +74,14 @@
   &__navigation-block{
     display: flex;
     align-items: center;
+  }
+
+  &__user-name{    
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark-shade50;
   }
 }

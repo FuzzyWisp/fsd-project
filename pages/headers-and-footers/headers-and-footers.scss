@@ -1,3 +1,10 @@
-body{
+.headers-and-footers{
   background-color: #e5e5e5;
+
+  &__item{
+    
+    & + &{
+      padding-top: 40px;
+    }
+  }
 }

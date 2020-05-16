@@ -4,19 +4,21 @@ block vars
 
 doctype html
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title #{pageTitle}
-        link(rel='icon', href='./static/img/ui-kit-logo.svg', type='image/x-icon')
-        link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
-    body
-        
-        header.head
-            +logo('ui-kit')
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{pageTitle}
+    link(rel='icon', href='./static/img/ui-kit-logo.svg', type='image/x-icon')
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
 
-            .head__links
-                a(href="https://fuzzywisp.github.io/fsd/colors-and-type.html").head__link Colors and Type
-                a(href="https://fuzzywisp.github.io/fsd/form-elements.html").head__link Form Elements
+  body(class=bodyClass)     
+    header.ui-kit-header
+      +logo('ui-kit')
 
-        block content
+      .ui-kit-header__links
+        a(href="https://fuzzywisp.github.io/fsd/colors-and-type.html").ui-kit-header__link Colors and Type
+        a(href="https://fuzzywisp.github.io/fsd/form-elements.html").ui-kit-header__link Form Elements
+        a(href="https://fuzzywisp.github.io/fsd/cards.html").ui-kit-header__link Cards
+        a(href="https://fuzzywisp.github.io/fsd/headers-and-footers.html").ui-kit-header__link Headers & Footers
+
+    block content
