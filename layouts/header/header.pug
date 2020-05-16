@@ -1,4 +1,5 @@
 include ../../toxin-blocks/button/button.pug
+include ../../toxin-blocks/logo/logo.pug
 
 mixin header(login, demo)
 
@@ -9,7 +10,7 @@ mixin header(login, demo)
 
   .header          
     .header__content-wrapper
-      img.header__logo(src='./static/img/toxin-logo.svg')
+      +logo
       .header__navigation-block
         a(class=linkClassList, href="#") Home
         a(href="#").header__link About Us
