@@ -12,13 +12,15 @@ html(lang="en")
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
 
   body(class=bodyClass)     
-    header.ui-kit-header
-      +logo('ui-kit')
+    .ui-kit__header
 
-      .ui-kit-header__links
-        a(href="https://fuzzywisp.github.io/fsd/colors-and-type.html").ui-kit-header__link Colors and Type
-        a(href="https://fuzzywisp.github.io/fsd/form-elements.html").ui-kit-header__link Form Elements
-        a(href="https://fuzzywisp.github.io/fsd/cards.html").ui-kit-header__link Cards
-        a(href="https://fuzzywisp.github.io/fsd/headers-and-footers.html").ui-kit-header__link Headers & Footers
+      .ui-kit__logo
+        +logo('ui-kit')
+
+      .ui-kit__header-links
+        a(href="https://fuzzywisp.github.io/fsd/colors-and-type.html").ui-kit__header-link Colors and Type
+        a(href="https://fuzzywisp.github.io/fsd/form-elements.html").ui-kit__header-link Form Elements
+        a(href="https://fuzzywisp.github.io/fsd/cards.html").ui-kit__header-link Cards
+        a(href="https://fuzzywisp.github.io/fsd/headers-and-footers.html").ui-kit__header-link Headers & Footers
 
     block content

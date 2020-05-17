@@ -26,7 +26,12 @@
     height: 70px;
     display: flex;
     align-items: center;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    justify-content: space-between;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
   }
 
   &__item{
@@ -66,6 +71,10 @@
     }
   }
 
+  &__social{
+    display: flex;
+  }
+
   &__text{
     font-family: 'Montserrat-Regular';
     font-style: normal;
@@ -78,8 +87,44 @@
       padding-top: 20px;
     }
 
-    & + .footer__social{
+    &_alt + .footer__social{
       padding-top: 25px;
+    }
+  }
+
+  &__social-link{
+    width: 24px;
+    height: 24px;
+
+    & + &{
+      margin-left: 20px;
+    }
+  }
+  
+  &__twitter-link{
+    
+    &:after{
+      content: '\f099';
+      @extend %font-awesome-brands;
+      @include text-gradient($purple-gradient, $purple);
+    }
+  }
+  
+  &__facebook-link{
+    
+    &:after{
+      content: '\f082';
+      @extend %font-awesome-brands;
+      @include text-gradient($purple-gradient, $purple);
+    }
+  }
+  
+  &__instagram-link{
+    
+    &:after{
+      content: '\f16d';
+      @extend %font-awesome-brands;
+      @include text-gradient($purple-gradient, $purple);
     }
   }
 }

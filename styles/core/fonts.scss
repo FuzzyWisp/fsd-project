@@ -41,8 +41,18 @@
          url('../static/fonts/MaterialIcons/MaterialIcons-Regular.woff2') format('woff2'),
          url('../static/fonts/MaterialIcons/MaterialIcons-Regular.woff') format('woff'),
          url('../static/fonts/MaterialIcons/MaterialIcons-Regular.ttf') format('truetype');
-
 }
+@font-face {
+    font-family: 'Font-Awesome';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../static/fonts/Font-Awesome/Font-Awesome.eot');
+    src: url('../static/fonts/Font-Awesome/Font-Awesome.svg') format('svg'),
+         url('../static/fonts/Font-Awesome/Font-Awesome.woff2') format('woff2'),
+         url('../static/fonts/Font-Awesome/Font-Awesome.woff') format('woff'),
+         url('../static/fonts/Font-Awesome/Font-Awesome.ttf') format('truetype');
+}
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;

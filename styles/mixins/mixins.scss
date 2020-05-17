@@ -69,7 +69,7 @@
   color: $dark-shade75;
 }
 
-%material-icons {
+%material-icons{
   direction: ltr;
   display: inline-block;
   font-family: 'Material Icons';
@@ -82,5 +82,20 @@
   word-wrap: normal;
   user-select: none;
   -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+%font-awesome-brands{
+  direction: ltr;
+  display: inline-block;
+  font-family: 'Font-Awesome';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  user-select: none;
   -webkit-font-smoothing: antialiased;
 }

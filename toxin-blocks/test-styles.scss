@@ -1,12 +1,19 @@
-.ui-kit-header{
-  display: flex;
-  justify-content: space-between;
+.ui-kit{
 
-  &__links{
+  &__header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo{
+    padding: 30px;
+  }
+
+  &__header-links{
     padding: 20px;
     }
     
-  &__link{
+  &__header-link{
 
     & + &{
       margin-left: 20px;

@@ -7,14 +7,14 @@ mixin footer(alt)
     footer.footer.footer_alt
       .footer__logo
         +logo
-      p.footer__text
+      p.footer__text.footer__text_alt
         | Lorem ipsum dolor sit amet consectetur 
         | adipiscing elit aliquam eget nullam pellentesque 
         | aliquam curabitur cociis.
-    .footer__social
-      .footer__item
-      .footer__item
-      .footer__item
+      .footer__social
+        a(href="#").footer__social-link.footer__twitter-link
+        a(href="#").footer__social-link.footer__facebook-link
+        a(href="#").footer__social-link.footer__instagram-link
         
   else
     footer.footer
@@ -28,34 +28,23 @@ mixin footer(alt)
             | aliquam curabitur cociis.
         .footer__item
           h3.footer__title Navigation
-          ul.footer__list
-            li
+          .footer__list
               a(href="#").footer__link About Us
-            li
               a(href="#").footer__link News
-            li
               a(href="#").footer__link Support
-            li
               a(href="#").footer__link Products
         .footer__item
           h3.footer__title about us
-          ul.footer__list
-            li
+          .footer__list
               a(href="#").footer__link Who we are
-            li
               a(href="#").footer__link Our team
-            li
               a(href="#").footer__link Careers
-            li
               a(href="#").footer__link Investors
         .footer__item
           h3.footer__title support
-          ul.footer__list
-            li
+          .footer__list
               a(href="#").footer__link Documentation
-            li
               a(href="#").footer__link Community
-            li
               a(href="#").footer__link Get in Touch
         .footer__item
           h3.footer__title Subscribe to our newsletter
@@ -69,6 +58,6 @@ mixin footer(alt)
         .footer__text
           span Copyright © 2018 Toxin UI Kit. All rights reserved.
         .footer__social
-          .footer__icon
-          .footer__icon
-          .footer__icon
+          a(href="#").footer__social-link.footer__twitter-link
+          a(href="#").footer__social-link.footer__facebook-link
+          a(href="#").footer__social-link.footer__instagram-link
