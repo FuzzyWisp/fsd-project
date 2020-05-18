@@ -1,7 +1,6 @@
 mixin text-field(title, subTitle, value, type, focus)
 
   - let textInputClassList = 'text-field__text-input'
-  - let placeholder = value
   - let textFieldClassList = 'text-field'
 
   if focus
@@ -12,12 +11,14 @@ mixin text-field(title, subTitle, value, type, focus)
 
 
   div(class=textFieldClassList)
-    .text-field__title-block
 
-      if title
-        h3.text-field__title #{title}
-      if subTitle
-        span.text-field__sub-title #{subTitle}
+    if title || subTitle
+      .text-field__title-block
+
+        if title
+          h3.text-field__title #{title}
+        if subTitle
+          span.text-field__sub-title #{subTitle}
 
     .text-field__container
       input(type='text', placeholder=value, class=textInputClassList)

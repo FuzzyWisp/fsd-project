@@ -1,0 +1,74 @@
+include ../../toxin-blocks/data-picker/data-picker.pug
+include ../../toxin-blocks/dropdown/dropdown.pug
+include ../../toxin-blocks/radio-buttons/radio-buttons.pug
+include ../../toxin-blocks/toggle/toggle.pug
+include ../../toxin-blocks/button/button.pug
+
+mixin form(type)
+  .form
+
+    if type == 'search'
+      
+      .form__title-block
+        h1.form__title Найдём номера под ваши пожелания
+      .form__data-picker
+        +data-picker('прибытие', 'выезд', 'ДД.ММ.ГГГГ', 'ДД.ММ.ГГГГ')
+      .form__dropdown
+        +dropdown('гости', '', 'Сколько гостей')
+      .form__button
+        +button('подобрать номер', 'large')
+
+
+    if type == 'registration'
+
+      .form__title-block
+        h1 Регистрация аккаунта
+      .form__text-field
+        +text-field(false, false, '')
+      .form__text-field
+        +text-field(false, false, '')
+      .form__radio-buttons
+        +radio-buttons('Мужчина', 'Женщина')
+      .form__text-field_berth-date
+        +text-field('', '', '')
+      .form__text-field
+        +text-field(false, false, '')
+      .form__text-field
+        +text-field(false, false, '')
+      .form__toggle
+        +toggle('Получать спецпредложения')
+      .form__button
+        +button('перейти к оплате', 'large')
+      .form__autorization-block
+        .form__text_black Уже есть аккаунт на Toxin
+        .form__button
+          +button('войти', 'empty')
+
+
+    if type == 'booking'
+
+      .form__title-block
+        .form__room-number № 888 люкс
+        .form__room-cost-per-day 9 990₽ в сутки
+      .form__data-picker
+        +data-picker('прибытие', 'выезд', '19.08.2019', '23.08.2019')
+      .form__dropdown
+        +dropdown('гости', '', '3 гостя')
+      .form__price-block
+        .form__price-block-item
+          .form__cost-counter
+            .form__text 9 990₽ х 4 суток
+          .form__text 39 960₽
+        .form__price-block-item
+          .form__service
+            .form__text Сбор за услуги: скидка 2 179₽
+          .form__text 0₽
+        .form__price-block-item
+          .form__text Сбор за дополнительные услуги
+          .form__text 300₽
+        .form__price-block-item
+          .form__text_bold Итого
+          .form__line
+          .form__text_bold 38 081₽
+      .form__button
+        +button('забронировать', 'large')

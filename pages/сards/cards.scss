@@ -1,9 +1,11 @@
 .cards{
+  background-color: #e5e5e5;
 
   &__grid-container{
     display: grid;
-    grid-template-columns: 380px 380px 380px;
-    grid-auto-flow: column;
+    grid-template-columns: 380px 380px 320px;
+    padding: 42px 140px 140px;
+    justify-content: space-between;
   }
 
   &__grid-item{

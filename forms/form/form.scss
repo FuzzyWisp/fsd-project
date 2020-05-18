@@ -1,0 +1,70 @@
+.form{
+  width: 380px;
+  padding: 40px 30px 30px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: #fff;
+
+  &__title-block{
+
+    & + .form__data-picker{
+      padding-top: 20px;
+    }
+  }
+
+  &__data-picker{
+
+    & + .form__dropdown{
+      padding-top: 20px;
+    }
+  }
+
+  &__dropdown{
+
+    & + .form__button{
+      padding-top: 30px;
+    }
+
+    & + .form__price-block{
+      padding-top: 20px;
+    }
+  }
+
+  &__price-block{
+
+    & + .form__button{
+      padding-top: 20px;
+    }
+  }
+  
+  &__price-block-item{
+    display: flex;
+    justify-content: space-between;
+
+    & + &{
+      padding-top: 10px;
+    }
+
+    &:last-child{
+      padding-top: 30px;
+    }
+  }
+
+  &__button{}
+
+  &__text{
+    max-width: 215px;
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    line-height: 24px;
+
+    &_bold{
+      font-family: 'Quicksand-Bold', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 24px;
+    }
+  }
+}

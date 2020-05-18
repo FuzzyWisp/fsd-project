@@ -1,5 +1,19 @@
 extends ./templates/ui-kit-template.pug
 
+include ../forms/form/form.pug
+
+block vars
+  - var pageTitle = 'Cards';
+  - var bodyClass = 'cards';
+
 block content
-  .cards__grid-cotainer
+  .cards__grid-container
+    .cards__grid-item
+      .margin-top_40
+        +form('search')
+      .margin-top_40
+        +form('registration')
+
+    .cards__grid-item
+      +form('booking')
     .cards__grid-item

@@ -1,10 +1,14 @@
-.radio-button{
-  cursor: pointer;
+.radio-buttons{
   display: flex;
-  align-items: center;
+  
+  &__button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 
-  & + .radio-button{
-    margin-left: 20px;
+    & + .radio-buttons__button{
+      margin-left: 20px;
+    }
   }
 
   &__title{
@@ -18,16 +22,16 @@
     border-radius: 40px;
     border: 1px solid $dark-shade25;
     
-    & + .radio-button__title{
+    & + .radio-buttons__title{
       margin-left: 10px;
     }
   }
 
   &__input{
-    &:checked ~ .radio-button__title{
+    &:checked ~ .radio-buttons__title{
       color: $dark-shade75;
     }
-    &:checked + .radio-button__item::before{
+    &:checked + .radio-buttons__item::before{
       content: '';
       position: absolute;
       left: 3px;
