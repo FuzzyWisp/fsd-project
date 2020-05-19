@@ -24,17 +24,17 @@ mixin form(type)
       .form__title-block
         h1 Регистрация аккаунта
       .form__text-field
-        +text-field(false, false, '')
+        +text-field(false, false, 'Имя')
       .form__text-field
-        +text-field(false, false, '')
+        +text-field(false, false, 'Фамилия')
       .form__radio-buttons
         +radio-buttons('Мужчина', 'Женщина')
       .form__text-field_berth-date
-        +text-field('', '', '')
+        +text-field('дата рождения', '', 'ДД.ММ.ГГГГ')
       .form__text-field
-        +text-field(false, false, '')
+        +text-field('данные для входа в сервис', false, 'Email')
       .form__text-field
-        +text-field(false, false, '')
+        +text-field(false, false, 'Пароль')
       .form__toggle
         +toggle('Получать спецпредложения')
       .form__button

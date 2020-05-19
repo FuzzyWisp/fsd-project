@@ -11,6 +11,10 @@
     & + .form__data-picker{
       padding-top: 20px;
     }
+
+    & + .form__text-field{
+      padding-top: 20px;
+    }
   }
 
   &__data-picker{
@@ -51,7 +55,54 @@
     }
   }
 
-  &__button{}
+  &__button{
+
+    & + .form__autorization-block{
+      padding-top: 30px;
+    }
+  }
+
+  &__text-field{
+
+    & + .form__text-field{
+      padding-top: 10px;
+    }
+
+    & + .form__radio-buttons{
+      padding-top: 10px;
+    }
+
+    & + .form__toggle{
+      padding-top: 10px;
+    }
+  }
+
+  &__radio-buttons{
+
+    & + .form__text-field_berth-date{
+      padding-top: 23px;
+    }
+  }
+
+  &__text-field_berth-date{
+
+    & + .form__text-field{
+      padding-top: 20px;
+    }
+  }
+
+  &__toggle{
+
+    & + .form__button{
+      padding-top: 24px;
+    }
+  }
+
+  &__autorization-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__text{
     max-width: 215px;
