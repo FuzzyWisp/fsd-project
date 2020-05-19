@@ -62,23 +62,34 @@ mixin form(type)
       .form__price-block
         .form__price-block-item
           .form__cost-counter
-            .form__text 9 990₽ х 4 суток
-          .form__text 39 960₽
+            .form__text.form__text_stretch 9 990₽ х 4 суток
+          .form__text.form__text_cost 39 960₽
         .form__price-block-item
           .form__service
-            .form__text Сбор за услуги: скидка 2 179₽
-          .form__text 0₽
+            .form__text.form__text_stretch Сбор за услуги: скидка 2 179₽
+          .form__text.form__text_cost 0₽
         .form__price-block-item
-          .form__text Сбор за дополнительные услуги
-          .form__text 300₽
+          .form__text.form__text_stretch Сбор за дополнительные услуги
+          .form__text.form__text_cost 300₽
         .form__price-block-item
-          .form__text_bold Итого
+          .form__text.form__text_bold Итого
           .form__line
-          .form__text_bold 38 081₽
+          .form__text.form__text_bold 38 081₽
       .form__button
         +button('забронировать', 'large')
 
 
     if type == 'autorization'
 
-      .
+      .form__title-block
+        h1 Войти
+      .form__text-field
+        +text-field(false, false, 'Email')
+      .form__text-field
+        +text-field(false, false, 'Пароль')
+      .form__button
+        +button('войти', 'large')
+      .form__autorization-block
+        .form__text_black Нет аккаунта на Toxin?
+        .form__button
+          +button('создать', 'empty')

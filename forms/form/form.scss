@@ -1,5 +1,5 @@
 .form{
-  width: 380px;
+  max-width: 380px;
   padding: 40px 30px 30px 30px;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -107,6 +107,10 @@
     & + .form__toggle{
       padding-top: 10px;
     }
+
+    & + .form__button{
+      padding-top: 20px;
+    }
   }
 
   &__radio-buttons{
@@ -137,11 +141,16 @@
   }
 
   &__text{
-    max-width: 215px;
     font-family: 'Montserrat-Regular';
     font-size: 14px;
     line-height: 24px;
     color: $dark-shade75;
+
+    &_cost{}
+
+    &_stretch{
+      flex: 1;
+    }
 
     &_bold{
       font-family: 'Quicksand-Bold', sans-serif;
@@ -151,5 +160,13 @@
       line-height: 24px;
       color: $dark-shade;
     }
+  }
+
+  &__line{
+    position: relative;
+    bottom: 6px;
+    border: solid $dark-shade25;
+    border-width: 0 0 1px 0;
+    flex: 1 1 auto;
   }
 }
