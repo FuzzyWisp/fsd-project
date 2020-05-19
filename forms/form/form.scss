@@ -6,7 +6,39 @@
   border-radius: 4px;
   background-color: #fff;
 
+  &__room-number{
+    @extend %title-h1;
+
+    &_sign{
+      font-family: 'Quicksand-Bold', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &_purple{
+      @extend %title-h3;
+      color: $purple;
+    }
+  }
+
+  &__room-cost-per-day{
+    color: $dark-shade50;
+    font-size: 12px;
+    
+    &_bold{
+      font-family: 'Montserrat-Bold';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
   &__title-block{
+    display: flex;
+    justify-content: space-between;
 
     & + .form__data-picker{
       padding-top: 20px;
@@ -109,6 +141,7 @@
     font-family: 'Montserrat-Regular';
     font-size: 14px;
     line-height: 24px;
+    color: $dark-shade75;
 
     &_bold{
       font-family: 'Quicksand-Bold', sans-serif;
@@ -116,6 +149,7 @@
       font-weight: bold;
       font-size: 19px;
       line-height: 24px;
+      color: $dark-shade;
     }
   }
 }
