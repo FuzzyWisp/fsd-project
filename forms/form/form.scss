@@ -146,10 +146,27 @@
     line-height: 24px;
     color: $dark-shade75;
 
-    &_cost{}
-
     &_stretch{
-      flex: 1;
+      position: relative;
+      width: 215px;   
+      
+      &:after{
+        content: 'i';
+        cursor: pointer;
+        position: absolute;
+        right: -25px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $dark-shade25;
+        border-radius: 50%;
+        text-align: center;
+        padding-bottom: 2px;
+        font-family: 'Montserrat-Bold';
+        font-style: normal;
+        font-size: 12px;
+        line-height: 19px;
+        color: $dark-shade25;
+      }
     }
 
     &_bold{
