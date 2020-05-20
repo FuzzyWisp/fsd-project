@@ -1,0 +1,31 @@
+include ../../toxin-blocks/rate-button/rate-button.pug
+
+mixin room-card(rate, lux)
+
+  - let src = './static/img/room.png'
+
+  if lux
+    - src = './static/img/room-lux.png'
+
+  .room-card
+    .room-card__image-block
+      img(src=src, alt="room")
+    .room-card__info-block
+      .room-card__title-block
+        .room-card__room-number 
+          span.room-card__room-number_sign № 
+          |888 
+
+          if lux
+            span.room-card__room-number_purple люкс
+
+        .room-card__room-cost-per-day 
+          span.room-card__room-cost-per-day_bold 9 990₽ 
+          span в сутки
+      .room-card__line
+      .room-card__feedback-block
+        .room-card__rate-button
+          +rate-button(rate)
+        .room-card__feedback
+          span.room-card__feedback_bold 65 
+          span Отзывов

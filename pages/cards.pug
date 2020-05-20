@@ -1,10 +1,11 @@
 extends ./templates/ui-kit-template.pug
 
 include ../forms/form/form.pug
+include ../forms/room-card/room-card.pug
 
 block vars
-  - var pageTitle = 'Cards';
-  - var bodyClass = 'cards';
+  - pageTitle = 'Cards';
+  - bodyClass = 'cards';
 
 block content
   .cards__grid-container
@@ -19,4 +20,9 @@ block content
         +form('booking')
       .margin-top_40
         +form('autorization')
+
     .cards__grid-item
+      .margin-top_40
+        +room-card(5, true)
+      .margin-top_40
+        +room-card(4)

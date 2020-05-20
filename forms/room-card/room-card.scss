@@ -1,0 +1,67 @@
+.room-card{
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+  &__title-block{
+    display: flex;
+    justify-content: space-between;
+
+    & + .room-card__line{
+      margin-top: 10px;
+    }
+  }
+  
+  &__room-number{
+    @extend %title-h2;
+
+    &_sign{
+      font-family: 'Quicksand-Bold', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &_purple{
+      @extend %title-h3;
+      color: $purple;
+    }
+  }
+
+  &__room-cost-per-day, &__feedback{
+    color: $dark-shade50;
+    font-size: 12px;
+    
+    &_bold{
+      font-family: 'Montserrat-Bold';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__info-block{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  &__feedback-block{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__line{
+    height: 1px;
+    background: rgba(31, 32, 65, 0.1);
+
+
+    & + .room-card__feedback-block{
+      padding-top: 8px;
+    }
+  }
+}
