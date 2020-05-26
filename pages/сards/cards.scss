@@ -6,9 +6,18 @@
     grid-template-columns: 380px 380px 320px;
     padding: 42px 140px 140px;
     justify-content: space-between;
+    row-gap: 40px;
+
+    @media (max-width: 1435px){
+      grid-template-columns: repeat(auto-fill, 380px);
+      column-gap: 40px;
+    }
+
+    @media (max-width: 1079px){
+      justify-content: center;
+    }
   }
 
   &__grid-item{
-
   }
 }

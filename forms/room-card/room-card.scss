@@ -44,6 +44,10 @@
     }
   }
 
+  &__feedback{
+    cursor: pointer;
+  }
+
   &__info-block{
     display: flex;
     flex-direction: column;
