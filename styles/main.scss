@@ -61,22 +61,7 @@
 @import '../toxin-blocks/pagination/pagination';
 @import '../toxin-blocks/text-field/text-field';
 @import '../toxin-blocks/dropdown/dropdown.scss';
-
-
-/* refactoring */
-
-
-
-
-@import '../toxin-blocks/data-picker/data-picker.scss';
-
-
-
-
-@import '../toxin-blocks/counter/__button';
-@import '../toxin-blocks/counter/__value';
-
-@import '../toxin-blocks/menu-item/__lable';
+@import '../toxin-blocks/data-picker/data-picker';
 
 
 /* TEST STYLES */
@@ -86,7 +71,7 @@
 
 
 body{
-  @extend %regular-text;
+  @extend %body-text;
 }
 h1{
   @extend %title-h1;

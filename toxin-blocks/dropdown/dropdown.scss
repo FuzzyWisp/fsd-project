@@ -24,7 +24,7 @@
   &__sub-title{
     color: $dark-shade50;
     text-transform: uppercase;
-    font-family: 'Montserrat-Regular';
+    @extend %body-text;
     font-size: 12px;
     line-height: 15px;
   }
@@ -109,7 +109,7 @@
   }
 
   &__counter-button{
-    font-family: 'Montserrat-Regular';
+    @extend %body-text;
     font-size: 18px;
     line-height: 22px;
     display: flex;

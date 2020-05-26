@@ -43,7 +43,7 @@
       background: $purple-gradient;
     }
 
-    &:checked + &__item{
+    &:checked + .radio-buttons__item{
       border-color: $purple;
     }
   }

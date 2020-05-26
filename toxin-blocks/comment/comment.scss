@@ -1,7 +1,7 @@
 .comment{
 
   &__title{
-    font-family: 'Montserrat-Bold';
+    @extend %body-text;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -10,7 +10,7 @@
   }
 
   &__sub-title{
-    font-family: 'Montserrat';
+    @extend %body-text;
     font-style: normal;
     font-size: 14px;
     line-height: 24px;

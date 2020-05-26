@@ -1,9 +1,15 @@
 mixin checkbox(title, id, rich, check)
+
+  - let checkboxTitleClassList = 'checkbox__title';
+
+  if rich
+    - checkboxTitleClassList += ' checkbox__title_rich'
+
   .checkbox
     label.checkbox__container
       input(type='checkbox', id=id, checked=check).checkbox__input
       .checkbox__item
-      span.checkbox__title #{title}
+      span(class=checkboxTitleClassList) #{title}
 
     if rich == 1
       span.checkbox__description
@@ -11,7 +17,7 @@ mixin checkbox(title, id, rich, check)
         br
         |не менее 91 см.
 
-    else if rich == 2
+    if rich == 2
       span.checkbox__description
         |На 1 этаже вас встретит специалист
         br
