@@ -1,0 +1,12 @@
+extends ./templates/page-template.pug
+
+include ../forms/form/form.pug
+
+block vars
+  - pageTitle = 'Registration';
+  - bodyClass = 'registration-page';
+
+block content
+  .registration-page__container
+    .registration-page__form
+      +form('registration')
