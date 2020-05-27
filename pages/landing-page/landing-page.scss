@@ -1,0 +1,20 @@
+.landing-page{
+
+  &__container{
+    height: 830px;
+    padding: 70px 140px 18px;
+    background-image: url('/static/img/background-image1.png');
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description{
+    align-self: flex-end;
+    width: 275px;
+    text-align: end;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark-shade75;
+  }
+}

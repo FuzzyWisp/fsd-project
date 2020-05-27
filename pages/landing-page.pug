@@ -1,0 +1,15 @@
+extends ./templates/page-template.pug
+
+include ../forms/form/form.pug
+
+block vars
+  - pageTitle = 'Landing Page';
+  - bodyClass = 'landing-page';
+
+block content
+  .landing-page__container
+    .landing-page__search-form
+      +form('search')
+    .landing-page__description
+      |Лучшие номера для вашей работы, 
+      |отдыха и просто вдохновения

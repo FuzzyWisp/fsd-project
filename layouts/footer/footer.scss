@@ -1,5 +1,7 @@
 .footer{
   background-color: #fff;
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+  
 
   &_alt{
     padding: 100px 140px;
@@ -12,8 +14,6 @@
     padding: 100px 140px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
-
   }
 
   &__line{
