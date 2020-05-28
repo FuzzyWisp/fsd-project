@@ -1,5 +1,5 @@
-include ../../layouts/header/header.pug
-include ../../layouts/footer/footer.pug
+include ../../../layouts/header/header.pug
+include ../../../layouts/footer/footer.pug
 
 block vars
 
@@ -14,7 +14,8 @@ html(lang="en")
 
   body(class=bodyClass)
 
-    +header
+    .page-template__header
+      +header
 
     block content
 

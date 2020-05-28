@@ -1,0 +1,81 @@
+extends ./templates/page-template/page-template.pug
+
+
+include ../forms/room-card/room-card.pug
+include ../toxin-blocks/checkbox/checkbox.pug
+include ../toxin-blocks/text-field/text-field.pug
+include ../toxin-blocks/dropdown/dropdown.pug
+include ../toxin-blocks/data-picker/data-picker.pug 
+include ../toxin-blocks/toggle/toggle.pug
+include ../toxin-blocks/range-slider/range-slider.pug
+include ../toxin-blocks/button/button.pug
+include ../toxin-blocks/pagination/pagination.pug
+include ../toxin-blocks/checkbox-list/checkbox-list.pug
+include ../toxin-blocks/bullet-list/bullet-list.pug
+include ../toxin-blocks/benefits-block/benefits-block.pug
+include ../toxin-blocks/comment/comment.pug
+include ../toxin-blocks/radio-buttons/radio-buttons.pug
+include ../toxin-blocks/like-button/like-button.pug
+include ../toxin-blocks/rate-button/rate-button.pug
+
+
+block vars
+  - pageTitle = 'Search-room';
+  - bodyClass = 'search-room';
+
+block content
+  .search-room__container
+    .search-room__left-section
+      .search-room__left-section-item
+        +dropdown('даты пребывания в отеле', '19 авг - 23 авг', 'medium')
+      .search-room__left-section-item
+        +dropdown('гости', '3 гостя, 1 младенец', 'medium')
+      .search-room__left-section-item
+        +range-slider('диапазон цены')
+      .search-room__left-section-item
+        h3.search-room__item-title Checkbox Buttons
+        +checkbox('Можно курить')
+        +checkbox('Можно с питомцами')
+        +checkbox('Можно пригласить гостей (до 10 человек)')      
+      .search-room__left-section-item
+        h3.search-room__item-title доступность
+        +checkbox('Широкий коридор', '', 1)
+        +checkbox('Помощник для инвалидов', '', 2)
+      .search-room__left-section-item
+        +dropdown('удобства номера', '2 спальни, 2 кровати...', 'medium')
+      .search-room__left-section-item
+        +checkbox-list('дополнительные удобства')
+
+    .search-room__right-section
+      .search-room__search-results-block  
+        h1.search-room__title-block 
+          | Номера, которые мы для вас подобрали
+        .search-room__rooms-container
+          .search-room__room-card
+            +room-card()
+          .search-room__room-card
+            +room-card()
+          .search-room__room-card
+            +room-card()
+          .search-room__room-card
+            +room-card()
+          .search-room__room-card
+            +room-card()
+          .search-room__room-card
+            +room-card()
+          .search-room__room-card
+            +room-card()
+          .search-room__room-card
+            +room-card()
+          .search-room__room-card
+            +room-card()
+          .search-room__room-card
+            +room-card()
+          .search-room__room-card
+            +room-card()
+          .search-room__room-card
+            +room-card()
+          .search-room__room-card
+            +room-card()
+        .search-room__pagination
+          +pagination

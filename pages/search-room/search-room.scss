@@ -1,0 +1,58 @@
+.search-room{
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 140px 70px;
+    border-bottom: 1px solid $dark-shade25;
+  }
+
+  &__left-section{
+    width: 266px;
+  }
+
+  &__right-section{
+    width: 1000px;
+  }
+
+  &__title-block{
+
+    & + &__room-container{
+      margin-top: 10px;
+    }
+  }
+
+  &__left-section-item{
+
+    & + &{
+      padding-top: 30px;
+    }
+  }
+
+  &__search-results-block{}
+
+  &__room-card{
+    padding: 10px 6px;
+  }
+
+  &__rooms-container{
+    display: flex;
+    flex-wrap: wrap;
+
+    & + .search-room__pagination{
+      margin-top: 30px;
+    }
+  }
+
+  &__item-title{
+
+    & + .checkbox{
+      margin-top: 16px;
+    }
+  }
+
+  &__pagination{
+    display: flex;
+    justify-content: center;
+  }
+}
