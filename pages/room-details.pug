@@ -1,0 +1,57 @@
+extends ./templates/page-template/page-template.pug
+
+
+include ../forms/form/form.pug
+include ../toxin-blocks/text-field/text-field.pug
+include ../toxin-blocks/dropdown/dropdown.pug
+include ../toxin-blocks/data-picker/data-picker.pug
+include ../toxin-blocks/button/button.pug
+include ../toxin-blocks/checkbox-list/checkbox-list.pug
+include ../toxin-blocks/bullet-list/bullet-list.pug
+include ../toxin-blocks/benefits-block/benefits-block.pug
+include ../toxin-blocks/comment/comment.pug
+include ../toxin-blocks/like-button/like-button.pug
+
+
+block vars
+  - pageTitle = 'Room Sdetails';
+  - bodyClass = 'room-details';
+
+block content
+  .room-details__container
+    .room-details__galery
+    .room-details__booking-block
+      .room-details__info-section
+        .room-details__bonuses-block
+          .room-details__benefits-block.room-details__block
+            h2.room-details__block-title Сведения о номере
+            .room-details__item 
+              +benefits-block
+          .room-details__score-block.room-details__block
+            h2.room-details__block-title Впечатления от номера
+            .room-details__item
+
+        .room-details__comments-block.room-details__block
+          h2.room-details__block-title Отзывы посетителей номера
+          .room-details__item
+            +comment
+          .room-details__item
+            +comment
+
+        .room-details__rules-block
+          .room-details__bullet-list.room-details__rule.room-details__block
+            h2.room-details__block-title Правила
+            .room-details__item
+              +bullet-list
+
+          .room-details__cancel.room-details__rule.room-details__block
+            h2.room-details__block-title Отмена
+            .room-details__item
+              |Бесплатная отмена в течение 48 ч. После этого 
+              |при отмене не позднее чем за 5 дн. до прибытия 
+              |вы получите полный возврат за вычетом сбора за 
+              |услуги.
+
+
+      .room-details__form-section
+        +form('booking')

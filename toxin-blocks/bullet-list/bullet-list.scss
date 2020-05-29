@@ -1,12 +1,5 @@
 .bullet-list{
 
-  &__title{
-    
-    & + .bullet-list__container{
-      padding-top: 16px;
-    }
-  }
-
   &__container{
     padding-left: 20px;
     position: relative;

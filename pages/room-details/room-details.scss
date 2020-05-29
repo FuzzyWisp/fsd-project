@@ -1,0 +1,52 @@
+.room-details{
+
+  &__container{}
+
+  &__galery{
+    height: 485px;
+  }
+
+  &__booking-block{
+    display: flex;
+    padding: 40px 140px;
+  }
+
+  &__info-section{
+    width: 700px;
+
+    & + .room-details__form-section{
+      margin-left: 70px;
+    }
+  }
+
+  &__bonuses-block{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__rules-block{
+    display: flex;
+  }
+
+  &__block-title{
+
+    & + .room-details__item{
+      margin-top: 20px;
+    }
+  }
+
+  &__rule{
+    width: 50%;
+  }
+
+  &__block{
+    margin-top: 30px;
+  }
+
+  &__item{
+
+    & + &{
+      margin-top: 20px;
+    }
+  }
+}

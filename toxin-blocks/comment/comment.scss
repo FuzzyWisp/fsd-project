@@ -1,9 +1,10 @@
 .comment{
 
   &__title{
-    @extend %body-text;
+    @extend %title-h3;
     font-style: normal;
     font-weight: bold;
+    text-transform: none;
     font-size: 14px;
     line-height: 24px;
     color: $dark-shade75;
