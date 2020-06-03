@@ -11,10 +11,11 @@ include ../toxin-blocks/bullet-list/bullet-list.pug
 include ../toxin-blocks/benefits-block/benefits-block.pug
 include ../toxin-blocks/comment/comment.pug
 include ../toxin-blocks/like-button/like-button.pug
+include ../toxin-blocks/chart/chart.pug
 
 
 block vars
-  - pageTitle = 'Room Sdetails';
+  - pageTitle = 'Room Details';
   - bodyClass = 'room-details';
 
 block content
@@ -30,6 +31,7 @@ block content
           .room-details__score-block.room-details__block
             h2.room-details__block-title Впечатления от номера
             .room-details__item
+              +chart
 
         .room-details__comments-block.room-details__block
           h2.room-details__block-title Отзывы посетителей номера
@@ -40,7 +42,7 @@ block content
 
         .room-details__rules-block
           .room-details__bullet-list.room-details__rule.room-details__block
-            h2.room-details__block-title Правила
+            h2.room-details__block-title.room-details__block-title_spaced Правила
             .room-details__item
               +bullet-list
 
@@ -53,5 +55,5 @@ block content
               |услуги.
 
 
-      .room-details__form-section
+      .room-details__form-section.room-details__block
         +form('booking')

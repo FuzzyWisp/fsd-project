@@ -30,6 +30,10 @@
 
   &__block-title{
 
+    &_spaced{
+      padding-left: 20px;
+    }
+
     & + .room-details__item{
       margin-top: 20px;
     }
@@ -40,7 +44,7 @@
   }
 
   &__block{
-    margin-top: 30px;
+    margin-top: 35px;
   }
 
   &__item{
