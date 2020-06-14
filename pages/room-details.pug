@@ -21,7 +21,7 @@ block content
   .room-details__container
     .room-details__galery
     .room-details__booking-block
-      .room-details__info-section
+      .room-details__info-section.room-details__block
         .room-details__bonuses-block
           .room-details__benefits-block.room-details__block
             h2.room-details__block-title Сведения о номере
@@ -40,19 +40,21 @@ block content
 
 
         .room-details__comments-block.room-details__block
-          h2.room-details__block-title Отзывы посетителей номера
+          .room-details__rich-title-block
+            h2.room-details__block-title Отзывы посетителей номера
+            span.room-details__comments-number 2 отзыва
           .room-details__item
             +comment
           .room-details__item
             +comment
 
-        .room-details__rules-block
-          .room-details__bullet-list.room-details__rule.room-details__block
+        .room-details__rules-block.room-details__block
+          .room-details__bullet-list.room-details__rule
             h2.room-details__block-title.room-details__block-title_spaced Правила
             .room-details__item
               +bullet-list
 
-          .room-details__cancel.room-details__rule.room-details__block
+          .room-details__cancel.room-details__rule
             h2.room-details__block-title Отмена
             .room-details__item
               |Бесплатная отмена в течение 48 ч. После этого 

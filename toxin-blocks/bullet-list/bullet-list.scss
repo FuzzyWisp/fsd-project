@@ -1,29 +1,25 @@
 .bullet-list{
-
-  &__container{
-    padding-left: 20px;
-    position: relative;
-  }
+  padding-left: 20px;
 
   &__string{
     font-size: 14px;
     line-height: 24px;
     color: $dark-shade75;
+    position: relative;
 
     & + &{
-      padding-top: 10px;
+      margin-top: 10px;
     }
 
-    &::before{
-      content: 'fiber_manual_record';
-      @extend %material-icons;
-      color: $dark-shade25;
-      width: 0;
-      height: 0;
-      font-size: 16px;
-      position: relative;
-      right: 22px;
-      top: 2px;
+    &:before{
+      content: '';
+      background-color: $dark-shade25;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: -20px;
+      top: 7px;
     }
   }
 }

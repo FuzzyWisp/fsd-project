@@ -8,6 +8,7 @@
 
   &__booking-block{
     display: flex;
+    justify-content: space-between;
     padding: 40px 140px;
   }
 
@@ -39,12 +40,26 @@
     }
   }
 
+  &__rich-title-block{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__comments-number{
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    line-height: 14px;
+    color: $dark-shade50;
+  }
+
   &__rule{
     width: 50%;
   }
 
   &__block{
-    margin-top: 35px;
+    & + &{
+      margin-top: 35px;
+    }
   }
 
   &__item{
@@ -70,6 +85,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding-left: 45px;
   }
 
   &__chart-description-string{
@@ -78,7 +94,6 @@
     line-height: 24px;
     color: $dark-shade75;
     position: relative;
-    padding-left: 45px;
 
     &:before{
       content: '';
@@ -88,7 +103,7 @@
       background: #000;
       position: absolute;
       top: 7px;
-      left: 30px;
+      left: -15px;
     }
 
     &_amaizing{

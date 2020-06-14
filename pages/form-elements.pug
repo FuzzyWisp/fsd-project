@@ -31,13 +31,13 @@ block content
           .margin-top_20
             +text-field('text field', 'hover/focus', 'This is pretty awesome', '', true)
           .margin-top_20
-            +dropdown('dropdown', 'defoult', 'Сколько гостей')
+            +dropdown('dropdown', 'Сколько гостей', 'defoult')
           .margin-top_20.margin-top_40
             +text-field('masked text field', 'defoult', 'ДД.ММ.ГГГГ', 'mask')
           .margin-top_40
             +data-picker('date Dropdown', 'date Dropdown', true)
           .margin-top_40
-            +dropdown('filter date dropdown', '', '19 авг - 23 авг', 'medium')
+            +dropdown('filter date dropdown', '19 авг - 23 авг', 'medium', '')
           .margin-top_40
             +text-field('subscrition text field', '', 'Email', 'sub')
 
@@ -111,17 +111,17 @@ block content
         .form-elements__ui-kit-block
           .container_vertical
             .margin-top_20
-              +dropdown('dropdown', 'Default', '2 спальни, 2 кровати...', 'medium')
+              +dropdown('dropdown', '2 спальни, 2 кровати...', 'medium', 'Default')
             .margin-top_20
-              +dropdown('dropdown', 'expanded', '2 спальни, 2 кровати...', 'medium', true)
+              +dropdown('dropdown', '2 спальни, 2 кровати...', 'medium', 'expanded', true)
 
       .form-elements__grid-item
         .form-elements__ui-kit-block
-            +dropdown('dropdown', '', 'Сколько гостей', '', true)
+            +dropdown('dropdown', 'Сколько гостей', '', '', true)
 
       .form-elements__grid-item
         .form-elements__ui-kit-block
-            +dropdown('dropdown', '', '3 гостя', '', true)
+            +dropdown('dropdown', '3 гостя', '', '', true)
 
       .form-elements__grid-item
         .form-elements__ui-kit-block

@@ -29,21 +29,8 @@
 
 /* POSITIONING */
 
-@import '../toxin-blocks/title-block/title-block';
-
 @import '../toxin-blocks/container/container_horizontal';
 @import '../toxin-blocks/container/container_vertical';
-
-@import '../toxin-blocks/margin-top/_10';
-@import '../toxin-blocks/margin-top/_20';
-@import '../toxin-blocks/margin-top/_30';
-@import '../toxin-blocks/margin-top/_40';
-
-@import '../toxin-blocks/margin-left/_10';
-@import '../toxin-blocks/margin-left/_20';
-@import '../toxin-blocks/margin-left/_30';
-@import '../toxin-blocks/margin-left/_40';
-
 
 
 /* TOXIN COMPONENTS */
@@ -90,4 +77,81 @@ h3{
 
 .content-wrapper{
     padding: 0 140px;
+}
+
+.title-block{    
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  & + .container_vertical,
+  & + .container_horizontal{
+      margin-top: 16px;
+  }
+}
+
+.margin{
+
+  &-top{
+    
+    &_10{
+
+      & + &{
+          margin-top: 10px;
+      }
+    }
+      
+    &_20{
+
+      & + &{
+          margin-top: 20px;
+      }
+    }  
+      
+    &_30{
+
+      & + &{
+          margin-top: 30px;
+      }
+    }  
+      
+    &_40{
+
+      & + &{
+          margin-top: 40px;
+      }
+    }
+  }
+
+  &-left{
+    
+    &_10{
+
+      & + &{
+          margin-left: 10px;
+      }
+    }
+      
+    &_20{
+
+      & + &{
+          margin-left: 20px;
+      }
+    }  
+      
+    &_30{
+
+      & + &{
+          margin-left: 30px;
+      }
+    }  
+      
+    &_40{
+
+      & + &{
+          margin-left: 40px;
+      }
+    }
+  }
 }
