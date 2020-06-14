@@ -53,4 +53,74 @@
       margin-top: 20px;
     }
   }
+
+  &__chart-block{
+    display: flex;
+  }
+
+  &__chart{
+    width: 120px;
+    height: 120px;
+    background-color: #999;
+    border-radius: 50%;
+  }
+
+  &__chart-description{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__chart-description-string{
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark-shade75;
+    position: relative;
+    padding-left: 45px;
+
+    &:before{
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #000;
+      position: absolute;
+      top: 7px;
+      left: 30px;
+    }
+
+    &_amaizing{
+
+      &:before{
+        content: '';
+        background: $orange-gradient;
+      }
+    }
+
+    &_good{
+
+      &:before{
+        content: '';
+        background: $green-gradient;
+      }
+    }
+
+    &_satisfactorily{
+
+      &:before{
+        content: '';
+        background: $purple-gradient;
+      }
+    }
+
+    &_disappointingly{
+
+      &:before{
+        content: '';
+        background: $grey-gradient;
+      }
+    }
+  }
 }

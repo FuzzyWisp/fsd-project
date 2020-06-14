@@ -3,7 +3,7 @@ let data = {
   datasets: [{
     label: '# of Votes',
     data: [25, 25, 50, 0],
-    backgroundColor: ['Red', 'Blue', 'Yellow', 'Green'],
+    backgroundColor: ['linear-gradient(blue, pink)', 'Blue', 'Yellow', 'Green'],
     borderWidth: 2,
     weight: 2
   }]

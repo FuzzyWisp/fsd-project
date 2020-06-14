@@ -11,7 +11,6 @@ include ../toxin-blocks/bullet-list/bullet-list.pug
 include ../toxin-blocks/benefits-block/benefits-block.pug
 include ../toxin-blocks/comment/comment.pug
 include ../toxin-blocks/like-button/like-button.pug
-include ../toxin-blocks/chart/chart.pug
 
 
 block vars
@@ -31,7 +30,14 @@ block content
           .room-details__score-block.room-details__block
             h2.room-details__block-title Впечатления от номера
             .room-details__item
-              +chart
+              .room-details__chart-block
+                .room-details__chart                  
+                .room-details__chart-description
+                  .room-details__chart-description-string.room-details__chart-description-string_amaizing Великолепно
+                  .room-details__chart-description-string.room-details__chart-description-string_good Хорошо
+                  .room-details__chart-description-string.room-details__chart-description-string_satisfactorily Удовлетворительно
+                  .room-details__chart-description-string.room-details__chart-description-string_disappointingly Разочароан
+
 
         .room-details__comments-block.room-details__block
           h2.room-details__block-title Отзывы посетителей номера
